@@ -1,0 +1,43 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: 帳號
+      - textbox [ref=e6]
+      - generic [ref=e7]: "@"
+      - combobox [ref=e8]:
+        - option "ehsn.com.tw" [selected]
+        - option
+    - generic [ref=e10]:
+      - generic [ref=e11]: 密碼
+      - textbox [ref=e12]
+    - generic [ref=e13]:
+      - generic [ref=e14]: 代理人選項
+      - combobox [ref=e15]:
+        - option "本人登入" [selected]
+      - button " 登入" [ref=e17] [cursor=pointer]:
+        - generic [ref=e18]: 
+        - text: 登入
+  - table [ref=e20]:
+    - rowgroup [ref=e21]:
+      - row "後台管理網站： EU供應商商品平台 | EU供應商代提報入口 | 供應商SPM系統 | 行銷活動管理系統 | PGM Analytics System" [ref=e22]:
+        - cell "後台管理網站：" [ref=e23]:
+          - generic [ref=e24]: 後台管理網站：
+        - cell "EU供應商商品平台 |" [ref=e25]:
+          - link "EU供應商商品平台" [ref=e27] [cursor=pointer]:
+            - /url: https://b2b.etmall.com
+          - text: "|"
+        - cell "EU供應商代提報入口 |" [ref=e28]:
+          - link "EU供應商代提報入口" [ref=e30] [cursor=pointer]:
+            - /url: https://b2b.etmall.com/Web/CooperationLogin
+          - text: "|"
+        - cell "供應商SPM系統 |" [ref=e31]:
+          - link "供應商SPM系統" [ref=e33] [cursor=pointer]:
+            - /url: https://spm.ehsn.com.tw/spm/
+          - text: "|"
+        - cell "行銷活動管理系統 |" [ref=e34]:
+          - link "行銷活動管理系統" [ref=e36] [cursor=pointer]:
+            - /url: http://promo.etmall.com.tw/PRODSPMB2B/ManagerLogin.aspx
+          - text: "|"
+        - cell "PGM Analytics System" [ref=e37]:
+          - link "PGM Analytics System" [ref=e39] [cursor=pointer]:
+            - /url: http://pgm.sensengo.com.tw

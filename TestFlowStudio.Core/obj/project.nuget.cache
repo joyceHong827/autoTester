@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "8yhDAOyeQIw=",
+  "success": true,
+  "projectFilePath": "D:\\autoTester\\TestFlowStudio.Core\\TestFlowStudio.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joyce.hong\\.nuget\\packages\\markdig\\0.38.0\\markdig.0.38.0.nupkg.sha512",
+    "C:\\Users\\joyce.hong\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\joyce.hong\\.nuget\\packages\\serilog\\4.0.0\\serilog.4.0.0.nupkg.sha512",
+    "C:\\Users\\joyce.hong\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
+    "C:\\Users\\joyce.hong\\.nuget\\packages\\yamldotnet\\15.1.2\\yamldotnet.15.1.2.nupkg.sha512",
+    "C:\\Users\\joyce.hong\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.26\\microsoft.windowsdesktop.app.ref.8.0.26.nupkg.sha512",
+    "C:\\Users\\joyce.hong\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.26\\microsoft.netcore.app.ref.8.0.26.nupkg.sha512",
+    "C:\\Users\\joyce.hong\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.26\\microsoft.aspnetcore.app.ref.8.0.26.nupkg.sha512"
+  ],
+  "logs": []
+}

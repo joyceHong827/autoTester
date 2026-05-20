@@ -1,0 +1,434 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /Web/DefaultPage
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - generic [ref=e9]:
+          - generic [ref=e10]: 
+          - generic [ref=e11]: 商品管理
+        - generic [ref=e13]:
+          - generic [ref=e14]: 
+          - generic [ref=e15]: 商店管理
+        - generic [ref=e17]:
+          - generic [ref=e18]: 
+          - generic [ref=e19]: 進出貨管理
+        - generic [ref=e21]:
+          - generic [ref=e22]: 
+          - generic [ref=e23]: 銷退管理
+        - generic [ref=e25]:
+          - generic [ref=e26]: 
+          - generic [ref=e27]: 客訴管理
+        - generic [ref=e29]:
+          - generic [ref=e30]: 
+          - generic [ref=e31]: SPM
+        - generic [ref=e33]:
+          - generic [ref=e34]: 
+          - generic [ref=e35]: 電子票券管理
+        - generic [ref=e37]:
+          - generic [ref=e38]: 
+          - generic [ref=e39]: 廠商採購管理
+        - generic [ref=e41]:
+          - generic [ref=e42]: 
+          - generic [ref=e43]: 廠商請款管理
+      - generic [ref=e47]:
+        - generic [ref=e48]: 家裡蹲創意印刷股份有限公司 您好
+        - generic [ref=e49]: 
+  - generic [ref=e51]:
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e57]:
+              - generic [ref=e58]: 商品控量警示
+              - generic [ref=e59]:
+                - generic [ref=e60]:
+                  - generic [ref=e61]: 無量銷售商品
+                  - generic [ref=e63]:
+                    - link "前往修改可接單量":
+                      - /url: /Web/ProductAccessNumEdit?saleStatus=4&accessNum=1
+                - generic [ref=e65]: 小於安全量
+                - generic [ref=e72]:
+                  - text: 網路
+                  - link "前往商品變量":
+                    - /url: /Web/ProductAccessNumEdit?accessNumberType=1
+                  - text: / 電視
+                  - link "前往商品變量":
+                    - /url: /Web/ProductAccessNumEdit?accessNumberType=2
+                  - generic [ref=e73]:
+                    - text: / 商城
+                    - link "前往商品變量":
+                      - /url: /Web/IMStoreProductAccessNumEdit
+            - generic [ref=e75]:
+              - generic [ref=e76]: 賣貴通報
+              - generic [ref=e77]:
+                - generic [ref=e78]:
+                  - generic [ref=e79]: 待處理通報
+                  - generic [ref=e81]:
+                    - link "前往商品變價":
+                      - /url: /Web/ProductPriceEdit
+                - generic [ref=e82]:
+                  - generic [ref=e83]: 審核駁回通報
+                  - generic [ref=e85]:
+                    - link "前往商品變價":
+                      - /url: /Web/ProductPriceEdit
+          - generic [ref=e88]:
+            - generic [ref=e89]: 審核駁回 （一週內）
+            - generic [ref=e90]:
+              - generic [ref=e91]:
+                - generic [ref=e93]:
+                  - generic [ref=e94]: 新品提報
+                  - generic [ref=e95]:
+                    - link "前往維護商品資料駁回":
+                      - /url: /Web/ProductQuery?rejectQueryType=1
+                - generic [ref=e97]:
+                  - generic [ref=e98]: 銷售狀態
+                  - generic [ref=e99]:
+                    - link "前往維護銷售狀態駁回":
+                      - /url: /Web/ProductManagementSalesStatus/?source=home
+              - generic [ref=e100]:
+                - generic [ref=e102]:
+                  - generic [ref=e103]: 商品修改
+                  - generic [ref=e104]:
+                    - link "前往維護商品資料駁回":
+                      - /url: /Web/ProductQuery?rejectQueryType=2
+                - generic [ref=e106]:
+                  - generic [ref=e107]: 商品變價
+                  - generic [ref=e108]:
+                    - link "前往商品變價駁回":
+                      - /url: /Web/ProductPriceEdit?salesMixType=3
+              - generic [ref=e109]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 商品變量
+                  - generic [ref=e113]:
+                    - link "前往修改可接單量駁回":
+                      - /url: /Web/ProductAccessNumEdit?salesMixType=3
+                - generic [ref=e115]:
+                  - generic [ref=e116]: 影音視頻
+                  - generic [ref=e117]:
+                    - link "前往駁回影音視頻":
+                      - /url: /Web/VideoUpload?source=home
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - generic [ref=e122]:
+                - button "prev" [ref=e123] [cursor=pointer]:
+                  - generic [ref=e124]: ‹
+                - button "next" [ref=e125] [cursor=pointer]:
+                  - generic [ref=e126]: ›
+              - button "今天" [disabled] [ref=e127] [cursor=pointer]
+            - generic [ref=e129]:
+              - button "週" [ref=e130] [cursor=pointer]
+              - button "14 天" [ref=e131] [cursor=pointer]
+              - button "月" [ref=e132] [cursor=pointer]
+            - generic [ref=e134]: 2026年5月10 – 16日
+          - table [ref=e137]:
+            - rowgroup [ref=e138]:
+              - row "週日 5/10 週一 5/11 週二 5/12 週三 5/13 週四 5/14 週五 5/15 週六 5/16" [ref=e139]:
+                - cell "週日 5/10 週一 5/11 週二 5/12 週三 5/13 週四 5/14 週五 5/15 週六 5/16" [ref=e140]:
+                  - table [ref=e142]:
+                    - rowgroup [ref=e143]:
+                      - row "週日 5/10 週一 5/11 週二 5/12 週三 5/13 週四 5/14 週五 5/15 週六 5/16" [ref=e144]:
+                        - columnheader "週日 5/10" [ref=e145]
+                        - columnheader "週一 5/11" [ref=e146]
+                        - columnheader "週二 5/12" [ref=e147]
+                        - columnheader "週三 5/13" [ref=e148]
+                        - columnheader "週四 5/14" [ref=e149]
+                        - columnheader "週五 5/15" [ref=e150]
+                        - columnheader "週六 5/16" [ref=e151]
+            - rowgroup [ref=e152]:
+              - row [ref=e153]:
+                - cell [ref=e154]:
+                  - generic [ref=e157]:
+                    - table [ref=e159]:
+                      - rowgroup [ref=e160]:
+                        - row [ref=e161]:
+                          - cell [ref=e162]
+                          - cell [ref=e163]
+                          - cell [ref=e164]
+                          - cell [ref=e165]
+                          - cell [ref=e166]
+                          - cell [ref=e167]
+                          - cell [ref=e168]
+                    - generic [ref=e169]:
+                      - table:
+                        - rowgroup:
+                          - row:
+                            - cell
+                            - cell
+                            - cell
+                            - cell
+                            - cell
+                            - cell
+                            - cell
+      - generic [ref=e170]:
+        - generic [ref=e174]:
+          - generic [ref=e175]: 待處理事項
+          - table [ref=e177]:
+            - rowgroup [ref=e178]:
+              - row "UMALL ETMALL 新零售" [ref=e179]:
+                - cell [ref=e180]
+                - cell "UMALL" [ref=e181]
+                - cell "ETMALL" [ref=e182]
+                - cell "新零售" [ref=e183]
+              - row "新客訴/待處理客訴 0 0 11 0 0 0" [ref=e184]:
+                - cell [ref=e185]
+                - cell "新客訴/待處理客訴" [ref=e186]
+                - cell "0 0" [ref=e187]:
+                  - link "0" [ref=e188] [cursor=pointer]:
+                    - /url: CustomerComplaintsManagment?platform=U&customerType=New
+                  - link "0" [ref=e189] [cursor=pointer]:
+                    - /url: CustomerComplaintsManagment?platform=U&customerType=Wait
+                - cell "11 0" [ref=e190]:
+                  - link "11" [ref=e191] [cursor=pointer]:
+                    - /url: CustomerComplaintsManagment?platform=E&customerType=New
+                  - link "0" [ref=e192] [cursor=pointer]:
+                    - /url: CustomerComplaintsManagment?platform=E&customerType=Wait
+                - cell "0 0" [ref=e193]:
+                  - link "0" [ref=e194] [cursor=pointer]:
+                    - /url: CustomerComplaintsManagment?platform=E&customerType=New
+                  - link "0" [ref=e195] [cursor=pointer]:
+                    - /url: CustomerComplaintsManagment?platform=E&customerType=Wait
+              - row "待處理問題回報 18" [ref=e196]:
+                - cell [ref=e197]
+                - cell "待處理問題回報" [ref=e198]
+                - cell [ref=e199]
+                - cell "18" [ref=e200]:
+                  - link "18" [ref=e201] [cursor=pointer]:
+                    - /url: IssueManagement
+              - row "庫送 待入庫數量 1490" [ref=e202]:
+                - cell "庫送" [ref=e203]
+                - cell "待入庫數量" [ref=e204]
+                - cell [ref=e205]
+                - cell "1490" [ref=e206]:
+                  - link "1490" [ref=e207] [cursor=pointer]:
+                    - /url: SPM_ShipOrderInfoSearch?platform=E
+              - row "庫送品缺數量 651" [ref=e208]:
+                - cell "庫送品缺數量" [ref=e209]
+                - cell [ref=e210]
+                - cell "651" [ref=e211]:
+                  - link "651" [ref=e212] [cursor=pointer]:
+                    - /url: ProductShortage
+              - row "待處理退廠量 123" [ref=e213]:
+                - cell "待處理退廠量" [ref=e214]
+                - cell [ref=e215]
+                - cell "123" [ref=e216]:
+                  - link "123" [ref=e217] [cursor=pointer]:
+                    - /url: ProductReturn
+              - row "廠送 宅配出貨訂單 0 6352 0" [ref=e218]:
+                - cell "廠送" [ref=e219]
+                - cell "宅配出貨訂單" [ref=e220]
+                - cell "0" [ref=e221]:
+                  - link "0" [ref=e222] [cursor=pointer]:
+                    - /url: "#"
+                - cell "6352" [ref=e223]:
+                  - link "6352" [ref=e224] [cursor=pointer]:
+                    - /url: ShipManage?platform=E
+                - cell "0" [ref=e225]:
+                  - link "0" [ref=e226] [cursor=pointer]:
+                    - /url: ShipManage?platform=E
+              - row "到廠取貨預約數量 19 0" [ref=e227]:
+                - cell "到廠取貨預約數量" [ref=e228]
+                - cell [ref=e229]
+                - cell "19" [ref=e230]:
+                  - link "19" [ref=e231] [cursor=pointer]:
+                    - /url: CSPickup/Reservation
+                - cell "0" [ref=e232]:
+                  - link "0" [ref=e233] [cursor=pointer]:
+                    - /url: CSPickup/Reservation
+              - row "到廠取貨併箱預約數量 0 0" [ref=e234]:
+                - cell "到廠取貨併箱預約數量" [ref=e235]
+                - cell [ref=e236]
+                - cell "0" [ref=e237]:
+                  - link "0" [ref=e238] [cursor=pointer]:
+                    - /url: CSPickup/CombineDelivery
+                - cell "0" [ref=e239]:
+                  - link "0" [ref=e240] [cursor=pointer]:
+                    - /url: CSPickup/CombineDelivery
+              - row "待處理銷退單 0 338 0" [ref=e241]:
+                - cell "待處理銷退單" [ref=e242]
+                - cell "0" [ref=e243]:
+                  - link "0" [ref=e244] [cursor=pointer]:
+                    - /url: "#"
+                - cell "338" [ref=e245]:
+                  - link "338" [ref=e246] [cursor=pointer]:
+                    - /url: ReturnedManagment?platform=E
+                - cell "0" [ref=e247]:
+                  - link "0" [ref=e248] [cursor=pointer]:
+                    - /url: ReturnedManagment?platform=E
+              - row "全家常溫訂單 476 0" [ref=e249]:
+                - cell "全家常溫訂單" [ref=e250]
+                - cell [ref=e251]
+                - cell "476" [ref=e252]:
+                  - link "476" [ref=e253] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=FME
+                - cell "0" [ref=e254]:
+                  - link "0" [ref=e255] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=FME
+              - row "全家冷凍訂單 6 0" [ref=e256]:
+                - cell "全家冷凍訂單" [ref=e257]
+                - cell [ref=e258]
+                - cell "6" [ref=e259]:
+                  - link "6" [ref=e260] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=FMF
+                - cell "0" [ref=e261]:
+                  - link "0" [ref=e262] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=FMF
+              - row "萊爾富常溫訂單 91 0" [ref=e263]:
+                - cell "萊爾富常溫訂單" [ref=e264]
+                - cell [ref=e265]
+                - cell "91" [ref=e266]:
+                  - link "91" [ref=e267] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=HLE
+                - cell "0" [ref=e268]:
+                  - link "0" [ref=e269] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=HLE
+              - row "萊爾富冷凍訂單 0 0" [ref=e270]:
+                - cell "萊爾富冷凍訂單" [ref=e271]
+                - cell [ref=e272]
+                - cell "0" [ref=e273]:
+                  - link "0" [ref=e274] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=HLF
+                - cell "0" [ref=e275]:
+                  - link "0" [ref=e276] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=HLF
+              - row "7-11常溫訂單 223 0" [ref=e277]:
+                - cell "7-11常溫訂單" [ref=e278]
+                - cell [ref=e279]
+                - cell "223" [ref=e280]:
+                  - link "223" [ref=e281] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=SEE
+                - cell "0" [ref=e282]:
+                  - link "0" [ref=e283] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=SEE
+              - row "7-11冷凍訂單 16 0" [ref=e284]:
+                - cell "7-11冷凍訂單" [ref=e285]
+                - cell [ref=e286]
+                - cell "16" [ref=e287]:
+                  - link "16" [ref=e288] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=SEF
+                - cell "0" [ref=e289]:
+                  - link "0" [ref=e290] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=SEF
+              - row "OK常溫訂單 3 0" [ref=e291]:
+                - cell "OK常溫訂單" [ref=e292]
+                - cell [ref=e293]
+                - cell "3" [ref=e294]:
+                  - link "3" [ref=e295] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=OKE
+                - cell "0" [ref=e296]:
+                  - link "0" [ref=e297] [cursor=pointer]:
+                    - /url: StoreShipments?WarehouseType=OKE
+              - row "旅遊 等待出貨訂單 146" [ref=e298]:
+                - cell "旅遊" [ref=e299]
+                - cell "等待出貨訂單" [ref=e300]
+                - cell [ref=e301]
+                - cell "146" [ref=e302]:
+                  - link "146" [ref=e303] [cursor=pointer]:
+                    - /url: travelshipment/readyship
+              - row "待處理客訴 0" [ref=e304]:
+                - cell [ref=e305]
+                - cell "待處理客訴" [ref=e306]
+                - cell [ref=e307]
+                - cell "0" [ref=e308]:
+                  - link "0" [ref=e309] [cursor=pointer]:
+                    - /url: CustomerComplaintsManagment?platform=E
+              - row "待處理銷退單 24" [ref=e310]:
+                - cell [ref=e311]
+                - cell "待處理銷退單" [ref=e312]
+                - cell [ref=e313]
+                - cell "24" [ref=e314]:
+                  - link "24" [ref=e315] [cursor=pointer]:
+                    - /url: ReturnedManagment?platform=E
+          - generic [ref=e318]:
+            - img [ref=e319]
+            - text: 讀取中....
+        - generic [ref=e321]:
+          - generic [ref=e323]:
+            - group [ref=e325]:
+              - button "未簽署" [ref=e326] [cursor=pointer]
+              - button "已簽署" [ref=e327] [cursor=pointer]
+            - generic [ref=e328]:
+              - table [ref=e329]:
+                - rowgroup [ref=e330]:
+                  - row "主旨 最後日期" [ref=e331]:
+                    - columnheader "主旨" [ref=e332]
+                    - columnheader "最後日期" [ref=e333]
+                - rowgroup
+              - generic [ref=e334]:
+                - menubar "Pagination" [ref=e336] [cursor=pointer]:
+                  - generic [ref=e337]: 第一頁
+                  - generic [ref=e338]: 上一頁
+                  - menuitemradio "Goto page 1" [checked] [ref=e339]: "1"
+                  - generic [ref=e340]: 下一頁
+                  - generic [ref=e341]: 最後頁
+                - generic [ref=e342]: 每頁顯示 10 筆，總共 0 筆，共 0 頁
+          - generic [ref=e345]:
+            - group [ref=e347]:
+              - button "焦點訊息" [ref=e348] [cursor=pointer]
+              - button "系統公告" [ref=e349] [cursor=pointer]
+              - button "行政公告" [ref=e350] [cursor=pointer]
+              - button "文件下載" [ref=e351] [cursor=pointer]
+              - button "廠商Q&A" [ref=e352] [cursor=pointer]
+              - button "聯繫窗口" [ref=e353] [cursor=pointer]
+              - generic [ref=e354]:
+                - textbox "公告檢索" [ref=e355]
+                - button "" [ref=e357] [cursor=pointer]:
+                  - generic [ref=e358]: 
+            - generic [ref=e360]:
+              - table [ref=e361]:
+                - rowgroup [ref=e362]:
+                  - row "公告類型 公告類型 更新日期" [ref=e363]:
+                    - columnheader "公告類型" [ref=e364]
+                    - columnheader "公告類型" [ref=e365]
+                    - columnheader "更新日期" [ref=e366]
+                - rowgroup [ref=e367]:
+                  - row "系統公告 網購包裝減量聲明書 2025/06/18" [ref=e368]:
+                    - cell "系統公告" [ref=e369]
+                    - cell "網購包裝減量聲明書" [ref=e370]
+                    - cell "2025/06/18" [ref=e371]
+                  - row "文件下載 2023/12/19" [ref=e372]:
+                    - cell "文件下載" [ref=e373]
+                    - cell [ref=e374]
+                    - cell "2023/12/19" [ref=e375]
+                  - row "系統公告 測試公告 2023/12/07" [ref=e376]:
+                    - cell "系統公告" [ref=e377]
+                    - cell "測試公告" [ref=e378]
+                    - cell "2023/12/07" [ref=e379]
+                  - row "系統公告 韓國Olive Young熱銷低卡涮嘴脆片 員工優惠價來囉! 2023/11/13" [ref=e380]:
+                    - cell "系統公告" [ref=e381]
+                    - cell "韓國Olive Young熱銷低卡涮嘴脆片 員工優惠價來囉!" [ref=e382]
+                    - cell "2023/11/13" [ref=e383]
+                  - row "文件下載 新版B2B商品上架操作手冊 2013-05-28更新 2019/02/14" [ref=e384]:
+                    - cell "文件下載" [ref=e385]
+                    - cell "新版B2B商品上架操作手冊 2013-05-28更新" [ref=e386]
+                    - cell "2019/02/14" [ref=e387]
+                  - row "行政公告 2013年7月請款通知 2013/08/05" [ref=e388]:
+                    - cell "行政公告" [ref=e389]
+                    - cell "2013年7月請款通知" [ref=e390]
+                    - cell "2013/08/05" [ref=e391]
+                  - row "行政公告 2013年7月請款通知 2013/08/05" [ref=e392]:
+                    - cell "行政公告" [ref=e393]
+                    - cell "2013年7月請款通知" [ref=e394]
+                    - cell "2013/08/05" [ref=e395]
+                  - row "文件下載 提報禁用詞庫 2011/11/14" [ref=e396]:
+                    - cell "文件下載" [ref=e397]
+                    - cell "提報禁用詞庫" [ref=e398]
+                    - cell "2011/11/14" [ref=e399]
+              - generic [ref=e400]:
+                - menubar "Pagination" [ref=e402] [cursor=pointer]:
+                  - generic [ref=e403]: 第一頁
+                  - generic [ref=e404]: 上一頁
+                  - menuitemradio "Goto page 1" [checked] [ref=e405]: "1"
+                  - generic [ref=e406]: 下一頁
+                  - generic [ref=e407]: 最後頁
+                - generic [ref=e408]: 每頁顯示 10 筆，總共 8 筆，共 1 頁
+    - text:  
+  - generic [ref=e411]:
+    - generic [ref=e412]: "?"
+    - heading "上個月出貨包材用量尚未填寫" [level=2] [ref=e413]
+    - text: "!"
+    - separator [ref=e414]
+    - button "前往廠商出貨包材用量統計" [active] [ref=e415] [cursor=pointer]
+    - button "下次再說" [ref=e416] [cursor=pointer]

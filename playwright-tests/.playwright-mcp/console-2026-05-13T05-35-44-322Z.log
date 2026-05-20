@@ -1,0 +1,4 @@
+[     485ms] [LOG] JQMIGRATE: Migrate is installed, version 3.5.2 @ http://b2b.lab.etzone.net/Web/Scripts/jquery-migrate-3.5.2.min.js:1
+[     637ms] [VERBOSE] [DOM] Multiple forms should be contained in their own form elements; break up complex forms into ones that represent a single action: (More info: https://goo.gl/9p2vKq) %o @ http://b2b.lab.etzone.net/Web/B2B_B2ELogin:0
+[   41458ms] [LOG] JQMIGRATE: Migrate is installed, version 3.5.2 @ http://b2b.lab.etzone.net/Web/Scripts/jquery-migrate-3.5.2.min.js:1
+[  125265ms] [LOG] JQMIGRATE: Migrate is installed, version 3.5.2 @ http://b2b.lab.etzone.net/Web/Scripts/jquery-migrate-3.5.2.min.js:1

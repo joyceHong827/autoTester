@@ -1,0 +1,191 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: ../../../web/DefaultNewPage
+        - img [ref=e6]
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link " 商品管理" [ref=e11] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e12]:
+              - generic [ref=e13]: 
+              - text: 商品管理
+        - listitem [ref=e15]:
+          - link " 賣場管理" [ref=e16] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e17]:
+              - generic [ref=e18]: 
+              - text: 賣場管理
+        - listitem [ref=e20]:
+          - link " 供應商管理" [ref=e21] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e22]:
+              - generic [ref=e23]: 
+              - text: 供應商管理
+        - listitem [ref=e25]:
+          - link " 報表管理" [ref=e26] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e27]:
+              - generic [ref=e28]: 
+              - text: 報表管理
+        - listitem [ref=e30]:
+          - link " 行銷活動" [ref=e31] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e32]:
+              - generic [ref=e33]: 
+              - text: 行銷活動
+        - listitem [ref=e35]:
+          - link " 客服管理" [ref=e36] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e37]:
+              - generic [ref=e38]: 
+              - text: 客服管理
+        - listitem [ref=e40]:
+          - link " 系統管理" [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e42]:
+              - generic [ref=e43]: 
+              - text: 系統管理
+        - listitem [ref=e45]:
+          - link " 工作報告" [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e47]:
+              - generic [ref=e48]: 
+              - text: 工作報告
+        - listitem [ref=e50]:
+          - link "PGM系統" [ref=e51] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e52]: PGM系統
+        - listitem [ref=e54]:
+          - link "電視商品管理" [ref=e55] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e56]: 電視商品管理
+        - listitem [ref=e58]:
+          - link "商店管理" [ref=e59] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e60]: 商店管理
+        - listitem [ref=e62]:
+          - link "OB商品管理" [ref=e63] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e64]: OB商品管理
+        - listitem [ref=e66]:
+          - link "自然美門店管理系統" [ref=e67] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e68]: 自然美門店管理系統
+      - generic [ref=e72]:
+        - img [ref=e75]
+        - generic [ref=e80]: 
+        - generic [ref=e81]: Admin/admin
+        - link " 登出" [ref=e83] [cursor=pointer]:
+          - /url: ../../../../../../web/B2ELogin
+          - generic [ref=e84]: 
+          - text: 登出
+      - text: 
+  - heading " 目前位置：電視商品管理 ＞ 銷售商品查詢" [level=4] [ref=e87]:
+    - generic [ref=e88]: 
+    - text: 目前位置：電視商品管理 ＞ 銷售商品查詢
+  - generic [ref=e89]:
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - combobox [ref=e94]:
+            - option "富購銷售編號" [selected]
+            - option "富購商品編號"
+          - textbox [ref=e95]
+        - generic [ref=e96]:
+          - generic [ref=e97]: 商品名稱
+          - textbox [ref=e98]
+        - generic [ref=e99]:
+          - generic [ref=e100]: 負責MD
+          - textbox "輸入使用者姓名搜尋" [ref=e102]
+        - generic [ref=e103]:
+          - generic [ref=e104]: 廠商名稱/編號
+          - textbox "輸入廠商名稱或統編搜尋" [ref=e106]
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - generic [ref=e109]: 提報來源
+          - combobox [ref=e110]:
+            - option "--未選擇--" [selected]
+            - option "B2B"
+            - option "富購"
+        - generic [ref=e111]:
+          - generic [ref=e112]: 開發來源
+          - combobox [ref=e114]:
+            - option "--未選擇--" [selected]
+            - option "網路商品"
+            - option "型錄商品"
+            - option "直播商品"
+            - option "ECTV商品"
+            - option "藥妝店"
+            - option "電子票券"
+        - generic [ref=e115]:
+          - generic [ref=e116]: 後台分類
+          - generic [ref=e117]:
+            - combobox [ref=e118]:
+              - option "--大分類--" [selected]
+            - combobox [ref=e119]:
+              - option "--中分類--" [selected]
+            - combobox [ref=e120]:
+              - option "--小分類--" [selected]
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - generic [ref=e123]: 銷售狀態
+          - combobox [ref=e125]:
+            - option "--未選擇--" [selected]
+            - option "銷售不可"
+            - option "已下市"
+            - option "可銷售"
+        - generic [ref=e126]:
+          - generic [ref=e127]: 配送方式
+          - combobox [ref=e129]:
+            - option "--未選擇--" [selected]
+            - option "庫送"
+            - option "廠送"
+            - option "到廠取貨"
+            - option "特約"
+        - generic [ref=e130]:
+          - generic [ref=e131]: 商品屬性
+          - combobox [ref=e132]:
+            - option "--未選擇--" [selected]
+            - option "一般商品"
+            - option "KIT"
+            - option "贈品"
+        - generic [ref=e133]:
+          - generic [ref=e134]: 快速到貨
+          - combobox [ref=e135]:
+            - option "--未選擇--" [selected]
+            - option "是"
+            - option "否"
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - checkbox "U" [checked] [ref=e139]
+            - text: U
+          - generic [ref=e140]:
+            - checkbox "E" [checked] [ref=e141]
+            - text: E
+          - generic [ref=e142]:
+            - checkbox "EU" [checked] [ref=e143]
+            - text: EU
+        - generic [ref=e144]:
+          - generic [ref=e145]: 送審類型
+          - combobox [ref=e146]:
+            - option "--未選擇--" [selected]
+            - option "商審"
+            - option "書審"
+            - option "特審"
+          - textbox [ref=e147] [cursor=pointer]
+          - text: ~
+          - textbox [ref=e148] [cursor=pointer]
+        - generic [ref=e149]:
+          - generic [ref=e150]: 商品銷售時間
+          - textbox [ref=e151] [cursor=pointer]
+          - text: ~
+          - textbox [ref=e152] [cursor=pointer]
+      - button " 查詢" [ref=e155] [cursor=pointer]:
+        - generic [ref=e156]: 
+        - text: 查詢
+    - text: 
+    - text: 
+  - generic: "!"

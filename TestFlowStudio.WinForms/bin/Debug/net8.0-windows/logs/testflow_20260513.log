@@ -1,0 +1,11 @@
+2026-05-13 12:21:01.388 +08:00 [ERR] Unhandled UI thread exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestFlowStudio.WinForms.Forms.PlaywrightChatForm.InitializeComponent() in D:\autoTester\TestFlowStudio.WinForms\Forms\PlaywrightChatForm.Designer.cs:line 141
+   at TestFlowStudio.WinForms.Forms.PlaywrightChatForm..ctor(PlaywrightTestSession session, PlaywrightAIOptimizer optimizer, IPlaywrightService playwrightService) in D:\autoTester\TestFlowStudio.WinForms\Forms\PlaywrightChatForm.cs:line 26
+   at TestFlowStudio.WinForms.Forms.MainForm.btnOpenAIChat_Click(Object sender, EventArgs e) in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.cs:line 307
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(HWND hWnd, MessageId msg, WPARAM wparam, LPARAM lparam)

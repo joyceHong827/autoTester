@@ -1,0 +1,681 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /Web/DefaultPage
+        - img [ref=e6]
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]:
+            - generic [ref=e10]: 
+            - generic [ref=e11]: 商品管理
+          - generic [ref=e12]:
+            - generic [ref=e14]:
+              - generic [ref=e15]: 
+              - generic [ref=e16]: 商品提報
+            - link "大量商品上架" [ref=e17] [cursor=pointer]:
+              - /url: /Web/ProductManagerLarge
+              - generic [ref=e18]: 大量商品上架
+            - link "維護商品資料" [ref=e19] [cursor=pointer]:
+              - /url: /Web/ProductQuery
+              - generic [ref=e20]: 維護商品資料
+            - link "修改可接單量" [ref=e21] [cursor=pointer]:
+              - /url: /Web/ProductAccessNumEdit
+              - generic [ref=e22]: 修改可接單量
+            - link "商品變價" [ref=e23] [cursor=pointer]:
+              - /url: /Web/ProductPriceEdit
+              - generic [ref=e24]: 商品變價
+            - link "維護銷售狀態" [ref=e25] [cursor=pointer]:
+              - /url: /Web/ProductManagementSalesStatus
+              - generic [ref=e26]: 維護銷售狀態
+            - generic [ref=e28]:
+              - generic [ref=e29]: 
+              - generic [ref=e30]: 商品相關設定
+            - link "QC檢驗作業" [ref=e31] [cursor=pointer]:
+              - /url: /Web/QCPrint
+              - generic [ref=e32]: QC檢驗作業
+            - link "維護電視商品銷售賣點" [ref=e33] [cursor=pointer]:
+              - /url: /Web/SalesPoint
+              - generic [ref=e34]: 維護電視商品銷售賣點
+            - link "商品置入節目查詢" [ref=e35] [cursor=pointer]:
+              - /url: /Web/ProductProgramQuery
+              - generic [ref=e36]: 商品置入節目查詢
+            - link "影音視頻作業" [ref=e37] [cursor=pointer]:
+              - /url: /Web/VideoUpload
+              - generic [ref=e38]: 影音視頻作業
+            - link "商品參數設定" [ref=e39] [cursor=pointer]:
+              - /url: /Web/SpecPackManager
+              - generic [ref=e40]: 商品參數設定
+            - generic [ref=e42]:
+              - generic [ref=e43]: 
+              - generic [ref=e44]: 活動賣場管理
+            - generic [ref=e46]:
+              - generic [ref=e47]: 
+              - generic [ref=e48]: 報表管理
+            - link "特約商品查詢" [ref=e49] [cursor=pointer]:
+              - /url: /Web/SPMSpecialRoleQuery
+              - generic [ref=e50]: 特約商品查詢
+        - generic [ref=e52]:
+          - generic [ref=e53]: 
+          - generic [ref=e54]: 商店管理
+        - generic [ref=e56]:
+          - generic [ref=e57]: 
+          - generic [ref=e58]: 進出貨管理
+        - generic [ref=e60]:
+          - generic [ref=e61]: 
+          - generic [ref=e62]: 銷退管理
+        - generic [ref=e64]:
+          - generic [ref=e65]: 
+          - generic [ref=e66]: 客訴管理
+        - generic [ref=e68]:
+          - generic [ref=e69]: 
+          - generic [ref=e70]: SPM
+        - generic [ref=e72]:
+          - generic [ref=e73]: 
+          - generic [ref=e74]: 電子票券管理
+        - generic [ref=e76]:
+          - generic [ref=e77]: 
+          - generic [ref=e78]: 廠商採購管理
+        - generic [ref=e80]:
+          - generic [ref=e81]: 
+          - generic [ref=e82]: 廠商請款管理
+      - generic [ref=e86]:
+        - generic [ref=e87]: 家裡蹲創意印刷股份有限公司 您好
+        - generic [ref=e88]: 
+  - generic [ref=e89]:
+    - heading " 商品管理 ＞ 商品上架" [level=4] [ref=e91]:
+      - generic [ref=e92]: 
+      - text: 商品管理 ＞ 商品上架
+    - generic [ref=e94]:
+      - generic [ref=e95]:
+        - strong [ref=e97]: 電視商品
+        - generic [ref=e98]:
+          - strong
+      - checkbox "600秒後自動儲存" [checked] [ref=e100] [cursor=pointer]:
+        - generic [ref=e105]: "600"
+      - generic [ref=e107]:
+        - button "" [ref=e108] [cursor=pointer]
+        - generic [ref=e109]:
+          - button " 草稿範本" [ref=e110] [cursor=pointer]:
+            - generic [ref=e111]: 
+            - text: 草稿範本
+          - button " 存為範本" [ref=e112] [cursor=pointer]:
+            - generic [ref=e113]: 
+            - text: 存為範本
+          - button " 儲存草稿" [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]: 
+            - text: 儲存草稿
+          - button " 預覽" [ref=e116] [cursor=pointer]:
+            - generic [ref=e117]: 
+            - text: 預覽
+          - button " 送審" [ref=e118] [cursor=pointer]:
+            - generic [ref=e119]: 
+            - text: 送審
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - generic [ref=e122]:
+            - generic [ref=e123]: 
+            - text: 商品歸屬
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - radio "自營商品" [checked] [ref=e126]
+              - generic [ref=e127] [cursor=pointer]: 自營商品
+            - generic [ref=e128]:
+              - radio "寄售商品" [ref=e129]
+              - generic [ref=e130] [cursor=pointer]: 寄售商品
+        - generic [ref=e133]:
+          - generic: 商品名稱
+          - textbox "商品名稱" [ref=e134]:
+            - /placeholder: 長度限制14個字
+          - generic [ref=e136]: 0/30
+        - generic [ref=e139]:
+          - generic: 銷售名稱(供前台使用)
+          - textbox "銷售名稱(供前台使用)" [ref=e140]
+          - generic [ref=e142]: 0/80
+        - generic [ref=e145]:
+          - generic: 銷售副標(供前台使用)
+          - textbox "銷售副標(供前台使用)" [ref=e146]
+          - generic [ref=e148]: 0/48
+        - paragraph [ref=e153]:
+          - text: 1.名稱及銷售標題可接受#%()!@.+-~ 其餘特殊符號請勿輸入。
+          - generic [ref=e155]:
+            - text: 2.包檔商品，系統會自動在商品名稱最後加上"-包"
+            - text: 3.990元以下商品，系統會自動在商品名稱最後加上"-勁"
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - generic [ref=e158]: 
+            - text: 商品類別
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - radio "新品" [checked] [ref=e161]
+              - generic [ref=e162] [cursor=pointer]: 新品
+            - generic [ref=e163]:
+              - radio "舊品重組" [ref=e164]
+              - generic [ref=e165] [cursor=pointer]: 舊品重組
+            - generic [ref=e166]:
+              - radio "包檔商品" [ref=e167]
+              - generic [ref=e168] [cursor=pointer]: 包檔商品
+            - alert [ref=e169]:
+              - paragraph [ref=e170]:
+                - text: 1.新品為過去沒提報過的商品，包含成分、材質、外型、功能不同皆可提報新品。
+                - text: 2.舊品重組為曾經賣過，但價格、毛利變更、或組合、贈品變更的商品。
+        - generic [ref=e171]:
+          - generic [ref=e172]: 商品屬性
+          - generic [ref=e173]:
+            - generic [ref=e174]:
+              - radio "一般" [checked] [ref=e175]
+              - generic [ref=e176] [cursor=pointer]: 一般
+            - generic [ref=e177]:
+              - radio "贈品" [ref=e178]
+              - generic [ref=e179] [cursor=pointer]: 贈品
+        - generic [ref=e180]:
+          - generic [ref=e181]:
+            - generic [ref=e182]: 
+            - text: 後台分類
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - generic [ref=e185]:
+                - heading "選擇後台分類" [level=4] [ref=e187]:
+                  - link "選擇後台分類" [ref=e188] [cursor=pointer]:
+                    - /url: "#collapse1"
+                - generic [ref=e191]:
+                  - combobox [ref=e192]:
+                    - option "-- 請選擇大分類 --" [selected]
+                  - combobox [ref=e193]:
+                    - option "-- 請選擇中分類 --" [selected]
+                  - combobox [ref=e194]:
+                    - option "-- 請選擇小分類 --" [selected]
+                  - combobox [disabled] [ref=e195]:
+                    - option "-- 請選擇MD --" [disabled] [selected]
+              - heading "從MD挑選" [level=4] [ref=e198]:
+                - link "從MD挑選" [ref=e199] [cursor=pointer]:
+                  - /url: "#collapse3"
+            - alert [ref=e200]:
+              - generic [ref=e202]: "已選擇後台分類:"
+        - generic [ref=e203]: 
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - generic [ref=e208]: 
+            - text: 商品類型
+          - generic [ref=e209]:
+            - generic [ref=e210]:
+              - radio "一般" [ref=e211]
+              - generic [ref=e212] [cursor=pointer]: 一般
+            - generic [ref=e213]:
+              - radio "低溫冷藏" [ref=e214]
+              - generic [ref=e215] [cursor=pointer]: 低溫冷藏
+            - generic [ref=e216]:
+              - radio "低溫冷凍" [ref=e217]
+              - generic [ref=e218] [cursor=pointer]: 低溫冷凍
+            - generic [ref=e219]:
+              - radio "國內旅遊商品(歡樂旅行社)" [disabled] [ref=e220]
+              - generic [ref=e221] [cursor=pointer]: 國內旅遊商品(歡樂旅行社)
+            - generic [ref=e222]:
+              - radio "國外旅遊商品" [disabled] [ref=e223]
+              - generic [ref=e224] [cursor=pointer]: 國外旅遊商品
+            - generic [ref=e225]:
+              - checkbox "恆溫配送" [ref=e226]
+              - generic [ref=e227] [cursor=pointer]: 恆溫配送
+        - text: 
+        - generic [ref=e228]:
+          - generic [ref=e229]:
+            - generic [ref=e230]: 
+            - text: 價格
+          - generic [ref=e231]:
+            - generic [ref=e232]:
+              - generic [ref=e233]: 市價
+              - spinbutton [ref=e234]
+              - generic [ref=e235]: 售價
+              - spinbutton [disabled] [ref=e236]
+              - generic [ref=e237]: 未稅成本價
+              - spinbutton [disabled] [ref=e238]
+              - generic [ref=e239]: 含稅成本價
+              - spinbutton [disabled] [ref=e240]
+            - generic [ref=e241]:
+              - generic [ref=e242]: 毛利額
+              - generic [ref=e243]: 0(含稅)
+              - generic [ref=e244]: 毛利率
+              - generic [ref=e245]: 0.00%(含稅)
+              - generic [ref=e246]:
+                - generic [ref=e247]: 員工價
+                - spinbutton [disabled] [ref=e248]
+              - generic [ref=e249]:
+                - generic [ref=e250]: ESV價
+                - spinbutton [ref=e251]
+        - generic [ref=e252]:
+          - generic [ref=e253]: 貨量設定
+          - generic [ref=e254]:
+            - generic [ref=e255]:
+              - generic [ref=e256]:
+                - generic [ref=e257]: 
+                - text: 首次備貨量
+              - spinbutton [ref=e258]
+              - generic [ref=e259]:
+                - generic [ref=e260]: 
+                - text: 最大供貨量
+              - spinbutton [ref=e261]
+              - generic [ref=e262]:
+                - generic [ref=e263]: 
+                - text: 可銷售日
+              - textbox "-- 請選擇 --" [ref=e264]
+            - generic [ref=e266]:
+              - generic [ref=e267]:
+                - generic [ref=e268]: 
+                - text: 可追加量
+              - spinbutton [ref=e269]
+              - generic [ref=e270]:
+                - generic [ref=e271]: 
+                - text: 可追加量所需工作日
+                - spinbutton " 可追加量所需工作日 日" [ref=e272]
+                - text: 日
+        - generic [ref=e273]:
+          - generic [ref=e274]:
+            - generic [ref=e275]: 
+            - text: 配送方式
+          - generic [ref=e276]:
+            - generic [ref=e277]:
+              - generic [ref=e278]:
+                - radio "廠送" [ref=e279]
+                - generic [ref=e280] [cursor=pointer]: 廠送
+              - generic [ref=e281]:
+                - radio "到廠取貨" [ref=e282]
+                - generic [ref=e283] [cursor=pointer]: 到廠取貨
+              - generic [ref=e284]:
+                - radio "庫送" [ref=e285]
+                - generic [ref=e286] [cursor=pointer]: 庫送
+              - generic [ref=e287]:
+                - radio "特約" [disabled] [ref=e288]
+                - generic [ref=e289] [cursor=pointer]: 特約
+            - text:  
+        - generic [ref=e290]:
+          - generic [ref=e291]: 配送類型
+          - generic [ref=e292]:
+            - generic [ref=e293]:
+              - checkbox "一般宅配" [checked] [disabled] [ref=e294]
+              - generic [ref=e295] [cursor=pointer]: 一般宅配
+            - generic [ref=e296]:
+              - checkbox "超商取貨" [disabled] [ref=e297]
+              - generic [ref=e298] [cursor=pointer]: 超商取貨
+            - generic [ref=e299]:
+              - checkbox "全日低溫" [disabled] [ref=e300]
+              - generic [ref=e301] [cursor=pointer]: 全日低溫
+        - text: 
+        - generic [ref=e302]:
+          - generic [ref=e304]: 
+          - generic [ref=e305]:
+            - generic [ref=e306]:
+              - generic [ref=e309]: 
+              - generic [ref=e310]:
+                - generic [ref=e311]: 配送屬性
+                - combobox [ref=e313]:
+                  - option "無" [selected]
+                  - option "易碎品"
+                  - option "易漏品"
+                  - option "易碎且易漏品"
+              - generic [ref=e314]:
+                - generic [ref=e315]: 循環袋包裝
+                - combobox [disabled] [ref=e317]:
+                  - option "否" [disabled] [selected]
+                  - option "是" [disabled]
+              - generic [ref=e320]:
+                - text: "包裝方式:"
+                - combobox "包裝方式:" [ref=e321]:
+                  - option "無" [selected]
+            - generic [ref=e322]:
+              - generic [ref=e323]:
+                - generic [ref=e324]:
+                  - text: 包裹長
+                  - textbox "包裹長 (mm) ," [ref=e325]:
+                    - /placeholder: 公釐
+                  - text: (mm) ,
+                - generic [ref=e326]:
+                  - text: 包裹寬
+                  - textbox "包裹寬 (mm) ," [ref=e327]:
+                    - /placeholder: 公釐
+                  - text: (mm) ,
+                - generic [ref=e328]:
+                  - text: 包裹高
+                  - textbox "包裹高 (mm) ," [ref=e329]:
+                    - /placeholder: 公釐
+                  - text: (mm) ,
+                - generic [ref=e330]:
+                  - text: 包裹總重
+                  - textbox "包裹總重 (g)" [ref=e331]:
+                    - /placeholder: 公克
+                  - text: (g)
+              - generic [ref=e332]:
+                - generic [ref=e333]:
+                  - text: 商品長
+                  - textbox "商品長 (mm) ," [ref=e334]:
+                    - /placeholder: 公釐
+                  - text: (mm) ,
+                - generic [ref=e335]:
+                  - text: 商品寬
+                  - textbox "商品寬 (mm) ," [ref=e336]:
+                    - /placeholder: 公釐
+                  - text: (mm) ,
+                - generic [ref=e337]:
+                  - text: 商品高
+                  - textbox "商品高 (mm) ," [ref=e338]:
+                    - /placeholder: 公釐
+                  - text: (mm) ,
+                - generic [ref=e339]:
+                  - text: 商品總重
+                  - textbox "商品總重 (g)" [ref=e340]:
+                    - /placeholder: 公克
+                  - text: (g)
+        - text: 
+        - generic [ref=e343]: 
+        - generic [ref=e345]:
+          - generic [ref=e346]:
+            - generic [ref=e347]: 
+            - text: 顏色尺寸規格
+          - generic [ref=e348]:
+            - alert [ref=e349]:
+              - generic [ref=e350]:
+                - text: 廠商料號限制100個半形字，一個中文字為3個半形字
+                - text: 國際條碼限制 8~16 碼數字
+                - text: ※請先選擇呈現方式;規格特殊符號僅接受#%()!@.+-~*/_
+            - generic [ref=e352]:
+              - generic [ref=e353]:
+                - generic [ref=e354]: 
+                - text: "呈現方式:"
+              - generic [ref=e355]:
+                - radio "無規格" [checked] [ref=e356]
+                - generic [ref=e357] [cursor=pointer]: 無規格
+              - generic [ref=e358]:
+                - radio "只有顏色" [ref=e359]
+                - generic [ref=e360] [cursor=pointer]: 只有顏色
+              - generic [ref=e361]:
+                - radio "只有款式" [ref=e362]
+                - generic [ref=e363] [cursor=pointer]: 只有款式
+              - generic [ref=e364]:
+                - radio "顏色 + 款式" [ref=e365]
+                - generic [ref=e367] [cursor=pointer]: 顏色 + 款式
+            - table [ref=e370]:
+              - rowgroup [ref=e371]:
+                - row "No. 顏色 款式 廠商料號 國際條碼" [ref=e372]:
+                  - cell "No." [ref=e373]
+                  - cell "顏色" [ref=e374]:
+                    - generic [ref=e375]: 顏色
+                  - cell "款式" [ref=e376]:
+                    - generic [ref=e377]: 款式
+                  - cell "廠商料號" [ref=e378]
+                  - cell "國際條碼" [ref=e379]: 國際條碼 
+              - rowgroup [ref=e380]:
+                - row "1 共同 共同" [ref=e381]:
+                  - cell "1" [ref=e382]
+                  - cell "共同" [ref=e383]:
+                    - textbox [disabled] [ref=e384]: 共同
+                  - cell "共同" [ref=e385]:
+                    - textbox [disabled] [ref=e386]: 共同
+                  - cell [ref=e387]:
+                    - textbox [ref=e388]
+                  - cell [ref=e389]:
+                    - textbox [ref=e390]
+                  - text: 
+        - generic [ref=e391]:
+          - generic [ref=e392]:
+            - generic [ref=e393]: 
+            - text: 品牌
+          - button "尚未選擇" [ref=e395]
+        - generic [ref=e396]:
+          - generic [ref=e397]:
+            - generic [ref=e398]:
+              - generic [ref=e399]: 
+              - text: 商品主圖
+            - button "" [ref=e400] [cursor=pointer]:
+              - generic [ref=e401]: 
+          - generic [ref=e402]:
+            - alert [ref=e403]:
+              - generic [ref=e404]:
+                - text: 圖片限制最多8張，圖片小於500px時，系統會自動放大；圖片若不是正方形，會自動補白底為正方形
+                - text: 寬500px以上；長500px以上 ；單一圖片上限2MB；可上傳格式(副檔名)jpg, jpeg, png, bmp, gif
+                - text: 上傳後一律轉為.jpg格式(不支援gif動畫)
+            - table:
+              - rowgroup:
+                - row:
+                  - cell:
+                    - list
+        - generic [ref=e405]:
+          - generic [ref=e406]:
+            - generic [ref=e407]:
+              - generic [ref=e408]: 
+              - text: 商品QC圖
+            - button "" [ref=e409] [cursor=pointer]:
+              - generic [ref=e410]: 
+          - generic [ref=e411]:
+            - alert [ref=e412]:
+              - generic [ref=e413]:
+                - text: 圖片限制最多30張
+                - text: 大小：6MB
+                - text: 格式：jpg, jpeg, png, bmp
+            - table:
+              - rowgroup:
+                - row:
+                  - cell:
+                    - list
+        - generic [ref=e414]:
+          - generic [ref=e415]:
+            - generic [ref=e416]: 檢驗報告
+            - button "" [ref=e417] [cursor=pointer]:
+              - generic [ref=e418]: 
+          - generic [ref=e419]:
+            - alert [ref=e420]:
+              - generic [ref=e421]:
+                - text: 限制最多50筆
+                - text: 大小：1MB
+                - text: 格式：jpg, jpeg, png, bmp, pdf
+            - table:
+              - rowgroup:
+                - row:
+                  - cell:
+                    - list
+        - generic [ref=e422]:
+          - generic [ref=e423]:
+            - generic [ref=e424]: 廣告用圖
+            - button "" [ref=e425] [cursor=pointer]:
+              - generic [ref=e426]: 
+          - generic [ref=e427]:
+            - alert [ref=e428]:
+              - generic [ref=e429]:
+                - text: 1.圖片規格：長500px以上，寬500px以上，上限1MB。
+                - text: 2.可上傳格式(副檔名)jpg、jpeg、png、非動畫gif、bmp和tif、tiff。
+                - text: 3.請勿加入宣傳性文字、浮水印或框線，須為去背白背景圖。
+                - text: 4.圖片若不是正方形，會自動補白底為正方形。
+                - link "圖片參考範例" [ref=e430] [cursor=pointer]:
+                  - /url: /Web/Images/%e5%bb%a3%e5%91%8a%e7%94%a8%e5%9c%96%e7%af%84%e4%be%8b.jpg
+            - table:
+              - rowgroup:
+                - row:
+                  - cell:
+                    - list
+        - generic [ref=e431]:
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - generic [ref=e434]: 
+              - text: 商品介紹(供前台使用)
+            - button "" [ref=e435] [cursor=pointer]:
+              - generic [ref=e436]: 
+          - generic [ref=e437]:
+            - alert [ref=e438]:
+              - generic [ref=e439]:
+                - text: 圖片限制(超過限制大小時，系統會自動等比例縮小)；寬960px以內(2017/9/26起)；長9000px以內
+                - text: 單一圖片上限2MB；格式jpg, jpeg, png, bmp, gif(寬960以內可保留動畫效果，超過一律轉jpg)
+                - text: 可接受的外部連結：gov.tw, org.tw, edu.tw；可接受youtube內嵌語法
+            - application "RTF 編輯器, editor_kama" [ref=e442]:
+              - group "編輯器工具列":
+                - toolbar "工具" [ref=e443]:
+                  - button "最大化" [ref=e444]
+                - toolbar "文件" [ref=e446]:
+                  - button "原始碼" [ref=e447]:
+                    - generic [ref=e449]: 原始碼
+                - toolbar "插入" [ref=e450]:
+                  - button "表格" [ref=e451]
+                  - button "插入水平線" [ref=e453]
+                  - button "插入特殊字元" [ref=e455]
+                - toolbar "工具" [ref=e457]:
+                  - button "靠左對齊" [ref=e458]
+                  - button "置中" [ref=e460]
+                  - button "靠右對齊" [ref=e462]
+                  - button "左右對齊" [ref=e464]
+                - toolbar "基本樣式" [ref=e466]:
+                  - button "粗體" [ref=e467]
+                  - button "斜體" [ref=e469]
+                  - button "刪除線" [ref=e471]
+                  - separator [ref=e473]
+                  - button "移除格式" [ref=e474]
+                - toolbar "段落" [ref=e476]:
+                  - button "插入/移除編號清單清單" [ref=e477]
+                  - button "插入/移除項目符號清單" [ref=e479]
+                  - separator [ref=e481]
+                  - button "減少縮排" [disabled] [ref=e482]
+                  - button "增加縮排" [ref=e484]
+                  - separator [ref=e486]
+                  - button "引用段落" [ref=e487]
+                - toolbar "fontSize_sizes" [ref=e489]:
+                  - button "樣式" [ref=e490]:
+                    - generic [ref=e491]: 樣式
+                  - button "格式" [ref=e494]:
+                    - generic [ref=e495]: 格式
+                  - button "字型" [ref=e498]:
+                    - generic [ref=e499]: 字型
+                  - button "大小" [ref=e502]:
+                    - generic [ref=e503]: 大小
+                - toolbar "顏色" [ref=e506]:
+                  - button "文字顏色" [ref=e507]
+                  - button "背景顏色" [ref=e510]
+              - iframe [ref=e513]:
+                - paragraph [ref=f40e2]
+              - generic "調整大小" [ref=e514]: ◢
+              - group "元件路徑" [ref=e515]
+        - generic [ref=e517]:
+          - generic [ref=e518]:
+            - generic [ref=e519]: 
+            - text: 短敘述(供前台使用)
+          - textbox "必填欄位 (請勿斷行超過3行，字數限制100字內。)" [ref=e521]
+        - generic [ref=e522]:
+          - generic [ref=e523]: 銷售賣點
+          - textbox "字數限制1300字內" [ref=e525]
+        - alert [ref=e529]:
+          - generic [ref=e530]:
+            - text: 1.各說明欄位字數限制於1300個中英文字(含標點符號、空白與斷行)以內，不允許Html語法。
+            - text: 2.規格說明已加大到2500個中英文字(含標點符號、空白與斷行)以內
+            - text: 3.東森購物商品一律提供消費者10天審閱期。
+        - generic [ref=e531]:
+          - generic [ref=e532]:
+            - generic [ref=e533]: 
+            - text: 商品特色
+          - textbox "必填欄位" [ref=e535]
+        - generic [ref=e536]:
+          - generic [ref=e537]:
+            - generic [ref=e538]: 
+            - text: 規格說明
+          - textbox "必填欄位" [ref=e540]
+        - generic [ref=e541]:
+          - generic [ref=e542]:
+            - generic [ref=e543]: 
+            - text: 注意事項說明
+          - textbox "必填欄位" [ref=e545]
+        - text: 
+        - generic [ref=e546]:
+          - generic [ref=e547]:
+            - generic [ref=e548]: 
+            - text: 體驗說明
+          - textbox "必填欄位" [ref=e551]
+        - generic [ref=e552]:
+          - generic [ref=e553]: 贈品說明
+          - textbox [ref=e555]
+        - alert [ref=e559]:
+          - generic [ref=e560]:
+            - text: 1.有贈品請填寫敘述至少4個字以上，上限1500個字；
+            - text: 2.無贈品請保持空白，勿填入無意義文字；
+            - text: 3.(無效文字不列入字數計算：無, 點, ★,。,略 ,NA ,單引號, 雙引號)
+        - generic [ref=e561]:
+          - generic [ref=e562]: 配件說明
+          - textbox [ref=e564]
+        - generic [ref=e565]:
+          - generic [ref=e566]:
+            - generic [ref=e567]: 
+            - text: 使用方法說明
+          - textbox "必填欄位" [ref=e569]
+        - generic [ref=e570]:
+          - generic [ref=e571]: 相關字號&專利
+          - textbox [ref=e573]
+      - text:                     ▼ ▼ ▼ ▼   + +
+  - generic: "!"
+  - iframe [ref=e576]:
+    - generic [ref=f42e2]:
+      - generic [ref=f42e3]:
+        - link [ref=f42e4] [cursor=pointer]:
+          - /url: "###"
+        - link [ref=f42e5] [cursor=pointer]:
+          - /url: "###"
+        - textbox [ref=f42e7] [cursor=pointer]: 五月
+        - textbox [ref=f42e9] [cursor=pointer]: "2026"
+        - link [ref=f42e10] [cursor=pointer]:
+          - /url: "###"
+        - link [ref=f42e11] [cursor=pointer]:
+          - /url: "###"
+      - table [ref=f42e13]:
+        - rowgroup [ref=f42e14]:
+          - row "日 一 二 三 四 五 六" [ref=f42e15]:
+            - cell "日" [ref=f42e16]
+            - cell "一" [ref=f42e17]
+            - cell "二" [ref=f42e18]
+            - cell "三" [ref=f42e19]
+            - cell "四" [ref=f42e20]
+            - cell "五" [ref=f42e21]
+            - cell "六" [ref=f42e22]
+          - row "26 27 28 29 30 1 2" [ref=f42e23]:
+            - cell "26" [ref=f42e24] [cursor=pointer]
+            - cell "27" [ref=f42e25] [cursor=pointer]
+            - cell "28" [ref=f42e26] [cursor=pointer]
+            - cell "29" [ref=f42e27] [cursor=pointer]
+            - cell "30" [ref=f42e28] [cursor=pointer]
+            - cell "1" [ref=f42e29] [cursor=pointer]
+            - cell "2" [ref=f42e30] [cursor=pointer]
+          - row "3 4 5 6 7 8 9" [ref=f42e31]:
+            - cell "3" [ref=f42e32] [cursor=pointer]
+            - cell "4" [ref=f42e33] [cursor=pointer]
+            - cell "5" [ref=f42e34] [cursor=pointer]
+            - cell "6" [ref=f42e35] [cursor=pointer]
+            - cell "7" [ref=f42e36] [cursor=pointer]
+            - cell "8" [ref=f42e37] [cursor=pointer]
+            - cell "9" [ref=f42e38] [cursor=pointer]
+          - row "10 11 12 13 14 15 16" [ref=f42e39]:
+            - cell "10" [ref=f42e40] [cursor=pointer]
+            - cell "11" [ref=f42e41] [cursor=pointer]
+            - cell "12" [ref=f42e42] [cursor=pointer]
+            - cell "13" [ref=f42e43]
+            - cell "14" [ref=f42e44] [cursor=pointer]
+            - cell "15" [ref=f42e45] [cursor=pointer]
+            - cell "16" [ref=f42e46] [cursor=pointer]
+          - row "17 18 19 20 21 22 23" [ref=f42e47]:
+            - cell "17" [ref=f42e48] [cursor=pointer]
+            - cell "18" [ref=f42e49] [cursor=pointer]
+            - cell "19" [ref=f42e50] [cursor=pointer]
+            - cell "20" [ref=f42e51] [cursor=pointer]
+            - cell "21" [ref=f42e52] [cursor=pointer]
+            - cell "22" [ref=f42e53] [cursor=pointer]
+            - cell "23" [ref=f42e54] [cursor=pointer]
+          - row "24 25 26 27 28 29 30" [ref=f42e55]:
+            - cell "24" [ref=f42e56] [cursor=pointer]
+            - cell "25" [ref=f42e57] [cursor=pointer]
+            - cell "26" [ref=f42e58] [cursor=pointer]
+            - cell "27" [ref=f42e59] [cursor=pointer]
+            - cell "28" [ref=f42e60] [cursor=pointer]
+            - cell "29" [ref=f42e61] [cursor=pointer]
+            - cell "30" [ref=f42e62] [cursor=pointer]
+          - row "31 1 2 3 4 5 6" [ref=f42e63]:
+            - cell "31" [ref=f42e64] [cursor=pointer]
+            - cell "1" [ref=f42e65] [cursor=pointer]
+            - cell "2" [ref=f42e66] [cursor=pointer]
+            - cell "3" [ref=f42e67] [cursor=pointer]
+            - cell "4" [ref=f42e68] [cursor=pointer]
+            - cell "5" [ref=f42e69] [cursor=pointer]
+            - cell "6" [ref=f42e70] [cursor=pointer]
+      - generic [ref=f42e72]:
+        - button "清空" [ref=f42e73]
+        - button "今天" [ref=f42e74]
+        - button "確定" [ref=f42e75]

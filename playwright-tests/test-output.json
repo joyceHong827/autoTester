@@ -1,0 +1,179 @@
+﻿{
+  "config": {
+    "configFile": "D:\\autoTester\\playwright-tests\\playwright.config.ts",
+    "rootDir": "D:/autoTester/playwright-tests/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/autoTester/playwright-tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/autoTester/playwright-tests/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "TC-49755_?餉????&撖拇?芸?.spec.ts",
+      "file": "TC-49755_?餉????&撖拇?芸?.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "?餉???蝞∠?璅∠??芸?撽?",
+          "file": "TC-49755_?餉????&撖拇?芸?.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "???&撖拇??桀??閰Ｗ??賡?霅?,
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8382,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('th:has-text(\"撱???交?\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('th:has-text(\"撱???交?\")')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('th:has-text(\"撱???交?\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('th:has-text(\"撱???交?\")')\u001b[22m\n\n    at D:\\autoTester\\playwright-tests\\tests\\TC-49755_?餉????&撖拇?芸?.spec.ts:33:59\n    at D:\\autoTester\\playwright-tests\\tests\\TC-49755_?餉????&撖拇?芸?.spec.ts:32:5",
+                        "location": {
+                          "file": "D:\\autoTester\\playwright-tests\\tests\\TC-49755_?餉????&撖拇?芸?.spec.ts",
+                          "column": 59,
+                          "line": 33
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 31 |\u001b[39m     \u001b[90m// ??蝯? 1: ?具?????撖拇???ｇ???典?銵冽??柴葉嚗????望??雿?蝔勗歇霈?箝????望?u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'撽???????撖拇??銵冽?雿?蝔勗歇?湔'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'th:has-text(\"撱???交?\")'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'th:has-text(\"??交?\")'\u001b[39m))\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m \u001b[90m// 撽???甈??迂撌脩宏?扎u001b[39m\n \u001b[90m 35 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\autoTester\\playwright-tests\\tests\\TC-49755_?餉????&撖拇?芸?.spec.ts",
+                            "column": 59,
+                            "line": 33
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('th:has-text(\"撱???交?\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('th:has-text(\"撱???交?\")')\u001b[22m\n\n\n  31 |     // ??蝯? 1: ?具?????撖拇???ｇ???典?銵冽??柴葉嚗????望??雿?蝔勗歇霈?箝????望?n  32 |     await test.step('撽???????撖拇??銵冽?雿?蝔勗歇?湔', async () => {\n> 33 |       await expect(page.locator('th:has-text(\"撱???交?\")')).toBeVisible();\n     |                                                           ^\n  34 |       await expect(page.locator('th:has-text(\"??交?\")')).not.toBeVisible(); // 撽???甈??迂撌脩宏?扎n  35 |     });\n  36 |\n    at D:\\autoTester\\playwright-tests\\tests\\TC-49755_?餉????&撖拇?芸?.spec.ts:33:59\n    at D:\\autoTester\\playwright-tests\\tests\\TC-49755_?餉????&撖拇?芸?.spec.ts:32:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "撠?喟?仿??Ｖ蒂?瑁??餃",
+                          "duration": 1077
+                        },
+                        {
+                          "title": "撠?喋閬??恣??嚗????&撖拇????,
+                          "duration": 1614
+                        },
+                        {
+                          "title": "撽???????撖拇??銵冽?雿?蝔勗歇?湔",
+                          "duration": 5011,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('th:has-text(\"撱???交?\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('th:has-text(\"撱???交?\")')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('th:has-text(\"撱???交?\")')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('th:has-text(\"撱???交?\")')\u001b[22m\n\n    at D:\\autoTester\\playwright-tests\\tests\\TC-49755_?餉????&撖拇?芸?.spec.ts:33:59\n    at D:\\autoTester\\playwright-tests\\tests\\TC-49755_?餉????&撖拇?芸?.spec.ts:32:5",
+                            "location": {
+                              "file": "D:\\autoTester\\playwright-tests\\tests\\TC-49755_?餉????&撖拇?芸?.spec.ts",
+                              "column": 59,
+                              "line": 33
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 31 |\u001b[39m     \u001b[90m// ??蝯? 1: ?具?????撖拇???ｇ???典?銵冽??柴葉嚗????望??雿?蝔勗歇霈?箝????望?u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'撽???????撖拇??銵冽?雿?蝔勗歇?湔'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'th:has-text(\"撱???交?\")'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'th:has-text(\"??交?\")'\u001b[39m))\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m \u001b[90m// 撽???甈??迂撌脩宏?扎u001b[39m\n \u001b[90m 35 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-05-18T09:26:01.077Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\autoTester\\playwright-tests\\test-results\\TC-49755_?餉????&撖拇?芸?-?餉???蝞∠?璅∠??芸?撽?-???-撖拇??桀??閰Ｗ??賡?霅?chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\autoTester\\playwright-tests\\test-results\\TC-49755_?餉????&撖拇?芸?-?餉???蝞∠?璅∠??芸?撽?-???-撖拇??桀??閰Ｗ??賡?霅?chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\autoTester\\playwright-tests\\test-results\\TC-49755_?餉????&撖拇?芸?-?餉???蝞∠?璅∠??芸?撽?-???-撖拇??桀??閰Ｗ??賡?霅?chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\autoTester\\playwright-tests\\tests\\TC-49755_?餉????&撖拇?芸?.spec.ts",
+                        "column": 59,
+                        "line": 33
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6aaf68148c311e4b2bf1-79e90a5192a61915ed5d",
+              "file": "TC-49755_?餉????&撖拇?芸?.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-18T09:26:00.199Z",
+    "duration": 9803.258,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

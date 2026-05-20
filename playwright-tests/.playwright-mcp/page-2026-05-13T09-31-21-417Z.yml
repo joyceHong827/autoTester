@@ -1,0 +1,110 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: ../../../web/DefaultNewPage
+        - img [ref=e6]
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link " 商品管理" [ref=e11] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e12]:
+              - generic [ref=e13]: 
+              - text: 商品管理
+        - listitem [ref=e15]:
+          - link " 賣場管理" [ref=e16] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e17]:
+              - generic [ref=e18]: 
+              - text: 賣場管理
+        - listitem [ref=e20]:
+          - link " 供應商管理" [ref=e21] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e22]:
+              - generic [ref=e23]: 
+              - text: 供應商管理
+        - listitem [ref=e25]:
+          - link " 報表管理" [ref=e26] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e27]:
+              - generic [ref=e28]: 
+              - text: 報表管理
+        - listitem [ref=e30]:
+          - link " 行銷活動" [ref=e31] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e32]:
+              - generic [ref=e33]: 
+              - text: 行銷活動
+        - listitem [ref=e35]:
+          - link " 客服管理" [ref=e36] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e37]:
+              - generic [ref=e38]: 
+              - text: 客服管理
+        - listitem [ref=e40]:
+          - link " 系統管理" [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e42]:
+              - generic [ref=e43]: 
+              - text: 系統管理
+        - listitem [ref=e45]:
+          - link " 工作報告" [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e47]:
+              - generic [ref=e48]: 
+              - text: 工作報告
+        - listitem [ref=e50]:
+          - link "PGM系統" [ref=e51] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e52]: PGM系統
+        - listitem [ref=e54]:
+          - link "電視商品管理" [ref=e55] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e56]: 電視商品管理
+        - listitem [ref=e58]:
+          - link "商店管理" [ref=e59] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e60]: 商店管理
+        - listitem [ref=e62]:
+          - link "OB商品管理" [ref=e63] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e64]: OB商品管理
+        - listitem [ref=e66]:
+          - link "自然美門店管理系統" [ref=e67] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e68]: 自然美門店管理系統
+      - generic [ref=e72]:
+        - generic [ref=e74]: 
+        - generic [ref=e75]: Admin/admin
+        - link " 登出" [ref=e77] [cursor=pointer]:
+          - /url: ../../../../../../web/B2ELogin
+          - generic [ref=e78]: 
+          - text: 登出
+      - text: 
+  - generic [ref=e80]:
+    - heading " 目前位置：電視商品管理 ＞ 商品開發&審核 ＞ 商開審核" [level=4] [ref=e82]:
+      - generic [ref=e83]: 
+      - text: 目前位置：電視商品管理 ＞ 商品開發&審核 ＞ 商開審核
+    - text: 
+    - generic [ref=e84]:
+      - generic:
+        - generic:
+          - button " 上一頁" [ref=e85] [cursor=pointer]:
+            - generic [ref=e86]: 
+            - text: 上一頁
+          - button " 儲存" [ref=e87] [cursor=pointer]:
+            - generic [ref=e88]: 
+            - text: 儲存
+          - button " 駁回" [ref=e89] [cursor=pointer]:
+            - generic [ref=e90]: 
+            - text: 駁回
+          - button " 核可" [ref=e91] [cursor=pointer]:
+            - generic [ref=e92]: 
+            - text: 核可
+          - button " 預覽" [ref=e93] [cursor=pointer]:
+            - generic [ref=e94]: 
+            - text: 預覽
+    - text:    
+    - list [ref=e100] [cursor=pointer]
+    - text:            + +   
+  - generic: "!"

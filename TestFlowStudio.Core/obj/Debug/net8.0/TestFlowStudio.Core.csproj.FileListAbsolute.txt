@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\autoTester\TestFlowStudio.Core\obj\Debug\net8.0\TestFlowStudio.Core.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\autoTester\TestFlowStudio.Core\obj\Debug\net8.0\TestFlowStudio.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\autoTester\TestFlowStudio.Core\obj\Debug\net8.0\TestFlowStudio.Core.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\autoTester\TestFlowStudio.Core\obj\Debug\net8.0\TestFlowStudio.Core.AssemblyInfo.cs
+C:\Users\Administrator\Documents\autoTester\TestFlowStudio.Core\obj\Debug\net8.0\TestFlowStudio.Core.csproj.CoreCompileInputs.cache

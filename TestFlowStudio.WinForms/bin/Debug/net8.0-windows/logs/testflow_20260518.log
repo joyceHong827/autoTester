@@ -1,0 +1,83 @@
+2026-05-18 11:11:12.277 +08:00 [ERR] Unhandled UI thread exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TestFlowStudio.WinForms.Forms.PlaywrightChatForm.InitializeComponent() in D:\autoTester\TestFlowStudio.WinForms\Forms\PlaywrightChatForm.Designer.cs:line 141
+   at TestFlowStudio.WinForms.Forms.PlaywrightChatForm..ctor(PlaywrightTestSession session, PlaywrightAIOptimizer optimizer, IPlaywrightService playwrightService) in D:\autoTester\TestFlowStudio.WinForms\Forms\PlaywrightChatForm.cs:line 26
+   at TestFlowStudio.WinForms.Forms.MainForm.btnOpenAIChat_Click(Object sender, EventArgs e) in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.cs:line 307
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(HWND hWnd, MessageId msg, WPARAM wparam, LPARAM lparam)
+2026-05-18 16:49:09.935 +08:00 [ERR] Unhandled domain exception
+System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   at System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   at System.Windows.Forms.SplitContainer.ApplyPanel2MinSize(Int32 value)
+   at TestFlowStudio.WinForms.Forms.MainForm.BuildRunnerTab() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 355
+   at TestFlowStudio.WinForms.Forms.MainForm.InitializeComponent() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 103
+   at TestFlowStudio.WinForms.Forms.MainForm..ctor() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.cs:line 20
+   at TestFlowStudio.WinForms.Program.Main() in D:\autoTester\TestFlowStudio.WinForms\Program.cs:line 23
+2026-05-18 16:49:18.751 +08:00 [ERR] Unhandled domain exception
+System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   at System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   at System.Windows.Forms.SplitContainer.ApplyPanel2MinSize(Int32 value)
+   at TestFlowStudio.WinForms.Forms.MainForm.BuildRunnerTab() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 355
+   at TestFlowStudio.WinForms.Forms.MainForm.InitializeComponent() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 103
+   at TestFlowStudio.WinForms.Forms.MainForm..ctor() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.cs:line 20
+   at TestFlowStudio.WinForms.Program.Main() in D:\autoTester\TestFlowStudio.WinForms\Program.cs:line 23
+2026-05-18 16:49:26.168 +08:00 [ERR] Unhandled domain exception
+System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   at System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   at System.Windows.Forms.SplitContainer.ApplyPanel2MinSize(Int32 value)
+   at TestFlowStudio.WinForms.Forms.MainForm.BuildRunnerTab() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 355
+   at TestFlowStudio.WinForms.Forms.MainForm.InitializeComponent() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 103
+   at TestFlowStudio.WinForms.Forms.MainForm..ctor() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.cs:line 20
+   at TestFlowStudio.WinForms.Program.Main() in D:\autoTester\TestFlowStudio.WinForms\Program.cs:line 23
+2026-05-18 16:50:15.990 +08:00 [ERR] Unhandled domain exception
+System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   at System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   at System.Windows.Forms.SplitContainer.ApplyPanel2MinSize(Int32 value)
+   at TestFlowStudio.WinForms.Forms.MainForm.BuildRunnerTab()
+   at TestFlowStudio.WinForms.Forms.MainForm.InitializeComponent()
+   at TestFlowStudio.WinForms.Forms.MainForm..ctor()
+   at TestFlowStudio.WinForms.Program.Main()
+2026-05-18 16:53:50.252 +08:00 [ERR] Unhandled domain exception
+System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   at System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   at System.Windows.Forms.SplitContainer.ApplyPanel2MinSize(Int32 value)
+   at TestFlowStudio.WinForms.Forms.MainForm.BuildRunnerTab() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 356
+   at TestFlowStudio.WinForms.Forms.MainForm.InitializeComponent() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 104
+   at TestFlowStudio.WinForms.Forms.MainForm..ctor() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.cs:line 20
+   at TestFlowStudio.WinForms.Program.Main() in D:\autoTester\TestFlowStudio.WinForms\Program.cs:line 23
+2026-05-18 16:55:31.500 +08:00 [ERR] Unhandled domain exception
+System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   at System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   at System.Windows.Forms.SplitContainer.ApplyPanel2MinSize(Int32 value)
+   at TestFlowStudio.WinForms.Forms.MainForm.BuildRunnerTab() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 357
+   at TestFlowStudio.WinForms.Forms.MainForm.InitializeComponent() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 105
+   at TestFlowStudio.WinForms.Forms.MainForm..ctor() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.cs:line 20
+   at TestFlowStudio.WinForms.Program.Main() in D:\autoTester\TestFlowStudio.WinForms\Program.cs:line 23
+2026-05-18 16:55:42.633 +08:00 [ERR] Unhandled domain exception
+System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   at System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   at System.Windows.Forms.SplitContainer.ApplyPanel2MinSize(Int32 value)
+   at TestFlowStudio.WinForms.Forms.MainForm.BuildRunnerTab() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 357
+   at TestFlowStudio.WinForms.Forms.MainForm.InitializeComponent() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 105
+   at TestFlowStudio.WinForms.Forms.MainForm..ctor() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.cs:line 20
+   at TestFlowStudio.WinForms.Program.Main() in D:\autoTester\TestFlowStudio.WinForms\Program.cs:line 23
+2026-05-18 16:58:02.792 +08:00 [ERR] Unhandled domain exception
+System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   at System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   at System.Windows.Forms.SplitContainer.ApplyPanel2MinSize(Int32 value)
+   at TestFlowStudio.WinForms.Forms.MainForm.BuildRunnerTab()
+   at TestFlowStudio.WinForms.Forms.MainForm.InitializeComponent()
+   at TestFlowStudio.WinForms.Forms.MainForm..ctor()
+   at TestFlowStudio.WinForms.Program.Main()
+2026-05-18 16:58:09.791 +08:00 [ERR] Unhandled domain exception
+System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   at System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   at System.Windows.Forms.SplitContainer.ApplyPanel2MinSize(Int32 value)
+   at TestFlowStudio.WinForms.Forms.MainForm.BuildRunnerTab() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 357
+   at TestFlowStudio.WinForms.Forms.MainForm.InitializeComponent() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.Designer.cs:line 105
+   at TestFlowStudio.WinForms.Forms.MainForm..ctor() in D:\autoTester\TestFlowStudio.WinForms\Forms\MainForm.cs:line 20
+   at TestFlowStudio.WinForms.Program.Main() in D:\autoTester\TestFlowStudio.WinForms\Program.cs:line 23

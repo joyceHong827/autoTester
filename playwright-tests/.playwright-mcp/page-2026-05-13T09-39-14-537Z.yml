@@ -1,0 +1,167 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: ../../../web/DefaultNewPage
+        - img [ref=e6]
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link " 商品管理" [ref=e11] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e12]:
+              - generic [ref=e13]: 
+              - text: 商品管理
+        - listitem [ref=e15]:
+          - link " 賣場管理" [ref=e16] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e17]:
+              - generic [ref=e18]: 
+              - text: 賣場管理
+        - listitem [ref=e20]:
+          - link " 供應商管理" [ref=e21] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e22]:
+              - generic [ref=e23]: 
+              - text: 供應商管理
+        - listitem [ref=e25]:
+          - link " 報表管理" [ref=e26] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e27]:
+              - generic [ref=e28]: 
+              - text: 報表管理
+        - listitem [ref=e30]:
+          - link " 行銷活動" [ref=e31] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e32]:
+              - generic [ref=e33]: 
+              - text: 行銷活動
+        - listitem [ref=e35]:
+          - link " 客服管理" [ref=e36] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e37]:
+              - generic [ref=e38]: 
+              - text: 客服管理
+        - listitem [ref=e40]:
+          - link " 系統管理" [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e42]:
+              - generic [ref=e43]: 
+              - text: 系統管理
+        - listitem [ref=e45]:
+          - link " 工作報告" [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e47]:
+              - generic [ref=e48]: 
+              - text: 工作報告
+        - listitem [ref=e50]:
+          - link "PGM系統" [ref=e51] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e52]: PGM系統
+        - listitem [ref=e54]:
+          - link "電視商品管理" [ref=e55] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e56]: 電視商品管理
+        - listitem [ref=e58]:
+          - link "商店管理" [ref=e59] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e60]: 商店管理
+        - listitem [ref=e62]:
+          - link "OB商品管理" [ref=e63] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e64]: OB商品管理
+        - listitem [ref=e66]:
+          - link "自然美門店管理系統" [ref=e67] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e68]: 自然美門店管理系統
+      - generic [ref=e72]:
+        - generic [ref=e74]: 
+        - generic [ref=e75]: Admin/admin
+        - link " 登出" [ref=e77] [cursor=pointer]:
+          - /url: ../../../../../../web/B2ELogin
+          - generic [ref=e78]: 
+          - text: 登出
+      - text: 
+  - heading " 目前位置：電視商品管理 ＞ 商品開發&審核" [level=4] [ref=e81]:
+    - generic [ref=e82]: 
+    - text: 目前位置：電視商品管理 ＞ 商品開發&審核
+  - generic [ref=e83]:
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - combobox [ref=e88]:
+            - option "商品編號" [selected]
+            - option "提報編號"
+          - textbox [ref=e89]
+        - generic [ref=e90]:
+          - generic [ref=e91]: 商品名稱
+          - textbox [ref=e92]
+        - generic [ref=e93]:
+          - generic [ref=e94]: 負責MD
+          - textbox "輸入使用者姓名搜尋" [ref=e96]
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e99]: 廠商名稱/編號
+          - textbox "輸入廠商名稱或統編搜尋" [ref=e101]
+        - generic [ref=e102]:
+          - generic [ref=e103]: 送審類型
+          - combobox [ref=e105]:
+            - option "--未選擇--" [selected]
+            - option "商審"
+            - option "書審"
+            - option "特審"
+            - option "待審"
+        - generic [ref=e106]:
+          - generic [ref=e107]: 商品狀態
+          - combobox [ref=e108]:
+            - option "--未選擇--" [selected]
+            - option "新品送審"
+            - option "主管審核"
+            - option "提交商審"
+            - option "商開駁回"
+            - option "主管駁回"
+            - option "商審駁回"
+            - option "等待品檢"
+            - option "QC駁回"
+            - option "QC重送"
+            - option "高階審核"
+            - option "高階駁回"
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - generic [ref=e111]: 後台分類
+          - generic [ref=e112]:
+            - combobox [ref=e113]:
+              - option "--大分類--" [selected]
+            - combobox [ref=e114]:
+              - option "--中分類--" [selected]
+            - combobox [ref=e115]:
+              - option "--小分類--" [selected]
+        - generic [ref=e116]:
+          - generic [ref=e117]: 配送方式
+          - combobox [ref=e119]:
+            - option "--未選擇--" [selected]
+            - option "庫送"
+            - option "廠送"
+            - option "到廠取貨"
+            - option "特約"
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - generic [ref=e122]: 會議時間
+          - textbox [ref=e123]
+          - text: ~
+          - textbox [ref=e124]
+        - generic [ref=e125]:
+          - generic [ref=e126]: 商審會議
+          - combobox [ref=e127]:
+            - option "--未選擇--" [selected]
+      - generic [ref=e129]:
+        - button "商開審核" [disabled]
+        - button "主管審核商品" [disabled]
+        - button "高階審核商品" [disabled]
+        - button "駁回商品" [disabled]
+        - button "商審維護" [disabled]
+        - button "維護商品" [disabled]
+        - button " 商品查詢" [ref=e130] [cursor=pointer]:
+          - generic [ref=e131]: 
+          - text: 商品查詢
+    - text:  
+  - generic: "!"

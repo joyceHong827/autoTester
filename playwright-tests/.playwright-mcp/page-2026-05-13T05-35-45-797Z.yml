@@ -1,0 +1,57 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e11]:
+        - generic [ref=e13]:
+          - text: 統一編號
+          - textbox "統一編號" [ref=e14]
+        - generic [ref=e17]:
+          - text: 密碼
+          - textbox "密碼" [ref=e18]
+        - generic [ref=e21]:
+          - text: OTP
+          - textbox "OTP" [ref=e22]
+      - generic [ref=e23]:
+        - img [ref=e25]
+        - generic [ref=e26]:
+          - button " 登入" [ref=e27] [cursor=pointer]:
+            - generic [ref=e28]: 
+            - text: 登入
+          - text: 
+        - link "忘記密碼" [ref=e30] [cursor=pointer]:
+          - /url: /Web/ForgetPassword
+    - generic [ref=e31]:
+      - generic [ref=e32]: 系統重要公告（ 2022/1更新！） 2022/1/12
+      - list [ref=e34]:
+        - listitem [ref=e35]:
+          - heading "本系統建議使用Chrome／Edge瀏覽器。" [level=5] [ref=e36]
+        - listitem [ref=e37]:
+          - heading "為配合落實資通安全管理法及資訊保密，針對來源不明的IP將進行封鎖。" [level=5] [ref=e38]
+        - listitem [ref=e39]:
+          - heading "即日起停用TSL1.0與TSL1.1 微軟公告請參閱" [level=5] [ref=e40]:
+            - text: 即日起停用TSL1.0與TSL1.1
+            - link "微軟公告請參閱" [ref=e41] [cursor=pointer]:
+              - /url: "https://docs.microsoft.com/zh-tw/lifecycle/announcements/transport-layer-security-1x-disablement "
+        - listitem [ref=e42]:
+          - heading "若您有無法開啟本站的情形，請先洽 貴公司內部資訊人員確認網路環境及設定。" [level=5] [ref=e43]
+    - generic [ref=e44]:
+      - list [ref=e45]:
+        - listitem [ref=e46]: 1.本電腦系統僅限取得授權之使用者使用，任何未經授權之存取將依法被調查、起訴。
+        - listitem [ref=e47]: 2.根據個人資料保護法：
+        - listitem [ref=e48]:
+          - list [ref=e49]:
+            - listitem [ref=e50]: (1)非意圖營利違反本法行為者，得科處二年以下有期徒刑、拘役或科或併科20萬罰金。
+            - listitem [ref=e51]: (2)意圖營利違反本法行為者，得科處五年以下有期徒刑、拘役或科或併科100萬罰金。
+      - generic [ref=e52]: 建議使用 螢幕解析度1920*1080 並以Chrome 操作可達到最佳效果 © 2016. ALL RIGHTS RESERVED.
+  - generic: "!"
+  - iframe [ref=e56]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]:
+        - text: 採用
+        - strong [ref=f1e7]: reCAPTCHA
+        - text: 保護機制
+      - generic [ref=f1e9]:
+        - text: reCAPTCHA 的服務條款將有異動。
+        - link "採取行動" [ref=f1e10] [cursor=pointer]:
+          - /url: https://google.com/recaptcha/admin/migrate
+        - text: 。

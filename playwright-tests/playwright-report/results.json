@@ -1,0 +1,156 @@
+{
+  "config": {
+    "configFile": "D:\\autoTester\\playwright-tests\\playwright.config.ts",
+    "rootDir": "D:/autoTester/playwright-tests/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/autoTester/playwright-tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/autoTester/playwright-tests/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "TC-49755_電視商品提報&審核優化.spec.ts",
+      "file": "TC-49755_電視商品提報&審核優化.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "電視商品管理模組優化驗證",
+          "file": "TC-49755_電視商品提報&審核優化.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "商品開發&審核與銷售商品查詢功能驗證",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24882,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "導航至登入頁面並執行登入",
+                          "duration": 1181
+                        },
+                        {
+                          "title": "導航至「電視商品管理 ＞ 商品開發&審核」頁面",
+                          "duration": 1818
+                        },
+                        {
+                          "title": "驗證「商品開發&審核」列表欄位名稱已更新",
+                          "duration": 1375
+                        },
+                        {
+                          "title": "執行商品開發&審核頁面上的「商開審核」操作",
+                          "duration": 87
+                        },
+                        {
+                          "title": "導航至「商審作業」頁面並驗證相關欄位顯示",
+                          "duration": 814
+                        },
+                        {
+                          "title": "返回「商品開發&審核」頁面並驗證「送審類型」查詢選項",
+                          "duration": 2248
+                        },
+                        {
+                          "title": "導航至「銷售商品查詢」頁面並驗證新增的查詢條件",
+                          "duration": 519
+                        },
+                        {
+                          "title": "設定「送審類型」為「書審」、日期範圍並執行查詢",
+                          "duration": 7509
+                        },
+                        {
+                          "title": "驗證「銷售商品查詢」頁面有「匯出」功能",
+                          "duration": 8413
+                        }
+                      ],
+                      "startTime": "2026-05-20T07:20:41.349Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6aaf68148c311e4b2bf1-79e90a5192a61915ed5d",
+              "file": "TC-49755_電視商品提報&審核優化.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-20T07:20:39.480Z",
+    "duration": 27727.468,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
