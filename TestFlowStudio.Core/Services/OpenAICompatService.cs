@@ -21,16 +21,22 @@ public class OpenAICompatService : IAIService
     public string ProviderName => _providerName;
 
     // OpenAI
-    public static OpenAICompatService CreateOpenAI(AppSettings s) =>
+    public static OpenAICompatService CreateOpenAI(AppSettings s, string? overrideModel = null) =>
         new(s, "https://api.openai.com/v1",
             Helpers.SettingsManager.GetOpenAIApiKey(s),
-            s.AI.OpenAIModel, "OpenAI");
+            overrideModel.OrDefault(s.AI.OpenAIModel), "OpenAI");
 
     // Gemini via OpenAI-compatible endpoint
-    public static OpenAICompatService CreateGemini(AppSettings s) =>
+    public static OpenAICompatService CreateGemini(AppSettings s, string? overrideModel = null) =>
         new(s, "https://generativelanguage.googleapis.com/v1beta/openai",
             Helpers.SettingsManager.GetGeminiApiKey(s),
-            s.AI.GeminiModel, "Gemini");
+            overrideModel.OrDefault(s.AI.GeminiModel), "Gemini");
+
+    // Ollama 本地端（不需要 API Key）
+    public static OpenAICompatService CreateOllama(AppSettings s, string? overrideModel = null) =>
+        new(s, $"{s.AI.OllamaBaseUrl.TrimEnd('/')}/v1",
+            "ollama",   // Ollama 不驗證 Bearer，放任意字串即可
+            overrideModel.OrDefault(s.AI.OllamaModel), "Ollama");
 
     private OpenAICompatService(
         AppSettings settings, string baseUrl, string apiKey, string model, string name)
@@ -199,4 +205,11 @@ public class OpenAICompatService : IAIService
         }
         catch { return false; }
     }
+}
+
+file static class StringExtensions
+{
+    /// <summary>若字串為 null 或空白則回傳 fallback。</summary>
+    internal static string OrDefault(this string? value, string fallback) =>
+        string.IsNullOrWhiteSpace(value) ? fallback : value;
 }

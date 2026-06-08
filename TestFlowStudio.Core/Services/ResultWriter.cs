@@ -8,11 +8,13 @@ public class ResultWriter
 {
     private readonly AppSettings _settings;
     private readonly IRedmineService? _redmine;
+    private readonly IAIService? _ai;
 
-    public ResultWriter(AppSettings settings, IRedmineService? redmine = null)
+    public ResultWriter(AppSettings settings, IRedmineService? redmine = null, IAIService? ai = null)
     {
         _settings = settings;
         _redmine  = redmine;
+        _ai       = ai;
     }
 
     /// <summary>

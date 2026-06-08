@@ -32,6 +32,19 @@ public partial class SettingsForm : Form
         txtOpenAIModel.Text      = _settings.AI.OpenAIModel;
         txtGeminiModel.Text      = _settings.AI.GeminiModel;
         nudMaxTokens.Value       = _settings.AI.MaxTokens;
+        txtOllamaUrl.Text        = _settings.AI.OllamaBaseUrl;
+        txtOllamaModel.Text      = _settings.AI.OllamaModel;
+
+        // AI 任務指派
+        cmbTaskTestCaseProvider.SelectedItem = string.IsNullOrWhiteSpace(_settings.AITask.TestCaseProvider)
+            ? "（沿用全域）" : _settings.AITask.TestCaseProvider;
+        txtTaskTestCaseModel.Text = _settings.AITask.TestCaseModel;
+        cmbTaskScriptProvider.SelectedItem = string.IsNullOrWhiteSpace(_settings.AITask.ScriptProvider)
+            ? "（沿用全域）" : _settings.AITask.ScriptProvider;
+        txtTaskScriptModel.Text = _settings.AITask.ScriptModel;
+        cmbTaskResultProvider.SelectedItem = string.IsNullOrWhiteSpace(_settings.AITask.ResultProvider)
+            ? "（沿用全域）" : _settings.AITask.ResultProvider;
+        txtTaskResultModel.Text = _settings.AITask.ResultModel;
 
         // Playwright
         txtNodePath.Text            = _settings.Playwright.NodePath;
@@ -59,9 +72,19 @@ public partial class SettingsForm : Form
         _settings.AI.OpenAIModel = txtOpenAIModel.Text.Trim();
         _settings.AI.GeminiModel = txtGeminiModel.Text.Trim();
         _settings.AI.MaxTokens   = (int)nudMaxTokens.Value;
+        _settings.AI.OllamaBaseUrl = txtOllamaUrl.Text.Trim();
+        _settings.AI.OllamaModel   = txtOllamaModel.Text.Trim();
 
-        _settings.Playwright.NodePath            = txtNodePath.Text.Trim();
-        _settings.Playwright.WriteBackToRedmine  = chkWriteBack.Checked;
+        // AI 任務指派（選「沿用全域」或空白時存空字串）
+        _settings.AITask.TestCaseProvider = NormalizeProvider(cmbTaskTestCaseProvider.SelectedItem?.ToString());
+        _settings.AITask.TestCaseModel    = txtTaskTestCaseModel.Text.Trim();
+        _settings.AITask.ScriptProvider   = NormalizeProvider(cmbTaskScriptProvider.SelectedItem?.ToString());
+        _settings.AITask.ScriptModel      = txtTaskScriptModel.Text.Trim();
+        _settings.AITask.ResultProvider   = NormalizeProvider(cmbTaskResultProvider.SelectedItem?.ToString());
+        _settings.AITask.ResultModel      = txtTaskResultModel.Text.Trim();
+
+        _settings.Playwright.NodePath           = txtNodePath.Text.Trim();
+        _settings.Playwright.WriteBackToRedmine = chkWriteBack.Checked;
 
         _settings.Output.TestCasesDirectory = txtTestCasesDir.Text.Trim();
         _settings.Output.ScriptsDirectory   = txtScriptsDir.Text.Trim();
@@ -92,6 +115,8 @@ public partial class SettingsForm : Form
             ClaudeModel   = txtClaudeModel.Text.Trim(),
             OpenAIModel   = txtOpenAIModel.Text.Trim(),
             GeminiModel   = txtGeminiModel.Text.Trim(),
+            OllamaBaseUrl = txtOllamaUrl.Text.Trim(),
+            OllamaModel   = txtOllamaModel.Text.Trim(),
         }};
         SettingsManager.SetClaudeApiKey(tmp, txtClaudeKey.Text.Trim());
         SettingsManager.SetOpenAIApiKey(tmp, txtOpenAIKey.Text.Trim());
@@ -116,4 +141,8 @@ public partial class SettingsForm : Form
         DialogResult = DialogResult.Cancel;
         Close();
     }
+
+    /// <summary>「沿用全域」或空白 → 存空字串；其他正常存入。</summary>
+    private static string NormalizeProvider(string? value) =>
+        string.IsNullOrWhiteSpace(value) || value == "（沿用全域）" ? "" : value;
 }

@@ -115,7 +115,9 @@ public partial class MainForm : Form
             rtbIssuePreview.Clear();
 
             var issue = await _redmine!.GetIssueAsync(id, _cts.Token);
-            var gen   = new TestCaseGenerator(_ai!, _settings);
+            var aiTestCase = AIServiceFactory.CreateForTask(_settings, AITask.TestCase);
+            SafeAppend(rtbIssuePreview, $"[{aiTestCase.ProviderName}] 生成測試案例中...\n");
+            var gen   = new TestCaseGenerator(aiTestCase, _settings);
             var tc    = await gen.GenerateAndSaveAsync(
                 issue,
                 chunk => SafeAppend(rtbIssuePreview, chunk),
@@ -272,7 +274,9 @@ public partial class MainForm : Form
                 MarkdownBody = enrichedMd
             };
 
-            var transformer = new ScriptTransformer(_ai!, _settings);
+            var aiScript = AIServiceFactory.CreateForTask(_settings, AITask.Script);
+            SafeAppend(rtbGeneratedScript, $"[{aiScript.ProviderName}] 撰寫腳本中...\n");
+            var transformer = new ScriptTransformer(aiScript, _settings);
             var outPath = await transformer.TransformAndSaveAsync(
                 script,
                 enrichedTc,   // pass enriched copy
@@ -455,7 +459,9 @@ public partial class MainForm : Form
                 try
                 {
                     var tc = MarkdownHelper.ParseFile(markdownFilePath);
-                    var writer = new ResultWriter(_settings, _redmine);
+                        var aiResult = AIServiceFactory.CreateForTask(_settings, AITask.Result);
+                        SafeAppend(rtbRunLog, $"[{aiResult.ProviderName}] 寫回測試結果中...\n");
+                        var writer = new ResultWriter(_settings, _redmine, aiResult);
                     await writer.WriteAsync(tc, result, _cts.Token);
                     SafeAppend(rtbRunLog, $"\n✅ 測試結果已寫回：{Path.GetFileName(markdownFilePath)}\n");
                 }

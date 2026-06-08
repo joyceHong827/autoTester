@@ -15,18 +15,23 @@ public class ClaudeAIService : IAIService
 {
     private readonly HttpClient _http;
     private readonly AppSettings _settings;
+    private readonly string? _overrideModel;
     private const string ApiUrl = "https://api.anthropic.com/v1/messages";
 
     public string ProviderName => "Claude";
 
-    public ClaudeAIService(AppSettings settings)
+    public ClaudeAIService(AppSettings settings, string? overrideModel = null)
     {
         _settings = settings;
+        _overrideModel = overrideModel;
         _http = new HttpClient { Timeout = TimeSpan.FromSeconds(120) };
         var key = Helpers.SettingsManager.GetClaudeApiKey(settings);
         _http.DefaultRequestHeaders.Add("x-api-key", key);
         _http.DefaultRequestHeaders.Add("anthropic-version", "2023-06-01");
     }
+
+    private string Model =>
+        string.IsNullOrWhiteSpace(_overrideModel) ? _settings.AI.ClaudeModel : _overrideModel;
 
     private string SystemPrompt(string task) => task == "testcase"
         ? """
@@ -105,7 +110,7 @@ public class ClaudeAIService : IAIService
     {
         var payload = new
         {
-            model = _settings.AI.ClaudeModel,
+            model = Model,
             max_tokens = _settings.AI.MaxTokens,
             stream = true,
             system,
@@ -146,7 +151,7 @@ public class ClaudeAIService : IAIService
         {
             var payload = new
             {
-                model = _settings.AI.ClaudeModel,
+                model = Model,
                 max_tokens = 10,
                 messages = new[] { new { role = "user", content = "hi" } }
             };

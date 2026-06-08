@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestFlowStudio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8f0ae9718cac24fd1f41a602cadc7525969a5a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5eb54f0a7eaf595d77fffa26d21834bb405836b")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestFlowStudio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestFlowStudio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

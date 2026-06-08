@@ -44,31 +44,21 @@
     "tags": [],
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
-    "version": "1.59.1",
-    "workers": 4,
+    "version": "1.60.0",
+    "workers": 6,
     "webServer": null
   },
   "suites": [],
   "errors": [
     {
-      "message": "Error: Cannot find module '@playwright/test'\nRequire stack:\n- D:\\autoTester\\TestFlowStudio.WinForms\\bin\\Debug\\net8.0-windows\\GeneratedScripts\\TC-49755_電視商品提報&審核優化.spec.ts\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\transform\\transform.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\common\\configLoader.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\testActions.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\program.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\cli.js",
-      "stack": "Error: Cannot find module '@playwright/test'\nRequire stack:\n- D:\\autoTester\\TestFlowStudio.WinForms\\bin\\Debug\\net8.0-windows\\GeneratedScripts\\TC-49755_電視商品提報&審核優化.spec.ts\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\transform\\transform.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\common\\configLoader.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\testActions.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\program.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\cli.js\n    at Object.<anonymous> (D:\\autoTester\\TestFlowStudio.WinForms\\bin\\Debug\\net8.0-windows\\GeneratedScripts\\TC-49755_電視商品提報&審核優化.spec.ts:1:2)",
+      "message": "TypeError: \"\" is not a function",
+      "stack": "TypeError: \"\" is not a function\n    at Object.<anonymous> (D:\\autoTester\\TestFlowStudio.WinForms\\bin\\Debug\\net8.0-windows\\GeneratedScripts\\TC-49988_修正駁回重送至商開審核階段無法夾檔.spec.ts:1:4)",
       "location": {
-        "file": "D:\\autoTester\\TestFlowStudio.WinForms\\bin\\Debug\\net8.0-windows\\GeneratedScripts\\TC-49755_電視商品提報&審核優化.spec.ts",
-        "column": 2,
+        "file": "D:\\autoTester\\TestFlowStudio.WinForms\\bin\\Debug\\net8.0-windows\\GeneratedScripts\\TC-49988_修正駁回重送至商開審核階段無法夾檔.spec.ts",
+        "column": 4,
         "line": 1
       },
-      "snippet": "\u001b[90m   at \u001b[39mTC-49755_電視商品提報&審核優化.spec.ts:1\n\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1 |\u001b[39m ﻿\u001b[36mimport\u001b[39m { test\u001b[33m,\u001b[39m expect } \u001b[36mfrom\u001b[39m \u001b[32m'@playwright/test'\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m \u001b[90m// 測試案例描述\u001b[39m\n \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'電視商品管理模組優化驗證'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
-    },
-    {
-      "message": "Error: Cannot find module '@playwright/test'\nRequire stack:\n- D:\\autoTester\\TestFlowStudio.WinForms\\bin\\Debug\\net8.0-windows\\GeneratedScripts\\tests\\TC-49755_電視商品提報&審核優化.spec.ts\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\transform\\transform.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\common\\configLoader.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\testActions.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\program.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\cli.js",
-      "stack": "Error: Cannot find module '@playwright/test'\nRequire stack:\n- D:\\autoTester\\TestFlowStudio.WinForms\\bin\\Debug\\net8.0-windows\\GeneratedScripts\\tests\\TC-49755_電視商品提報&審核優化.spec.ts\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\transform\\transform.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\common\\configLoader.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\testActions.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\program.js\n- C:\\Users\\joyce.hong\\AppData\\Roaming\\npm\\node_modules\\@playwright\\test\\cli.js\n    at Object.<anonymous> (D:\\autoTester\\TestFlowStudio.WinForms\\bin\\Debug\\net8.0-windows\\GeneratedScripts\\tests\\TC-49755_電視商品提報&審核優化.spec.ts:1:2)",
-      "location": {
-        "file": "D:\\autoTester\\TestFlowStudio.WinForms\\bin\\Debug\\net8.0-windows\\GeneratedScripts\\tests\\TC-49755_電視商品提報&審核優化.spec.ts",
-        "column": 2,
-        "line": 1
-      },
-      "snippet": "\u001b[90m   at \u001b[39mtests\\TC-49755_電視商品提報&審核優化.spec.ts:1\n\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1 |\u001b[39m ﻿\u001b[36mimport\u001b[39m { test\u001b[33m,\u001b[39m expect } \u001b[36mfrom\u001b[39m \u001b[32m'@playwright/test'\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m \u001b[90m// 測試案例描述\u001b[39m\n \u001b[90m 4 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'電視商品管理模組優化驗證'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+      "snippet": "\u001b[90m   at \u001b[39mTC-49988_修正駁回重送至商開審核階段無法夾檔.spec.ts:1\n\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1 |\u001b[39m ﻿\u001b[32m``\u001b[39m\u001b[32m`typescript\u001b[39m\n \u001b[90m   |\u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 2 |\u001b[39m \u001b[32mimport { test, expect } from '@playwright/test';\u001b[39m\n \u001b[90m 3 |\u001b[39m \u001b[32m\u001b[39m\n \u001b[90m 4 |\u001b[39m \u001b[32mtest.describe('電視商品管理系統', () => {\u001b[39m\u001b[0m"
     },
     {
       "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
@@ -76,8 +66,8 @@
     }
   ],
   "stats": {
-    "startTime": "2026-05-20T03:30:21.502Z",
-    "duration": 165.26599999999996,
+    "startTime": "2026-06-05T07:10:17.460Z",
+    "duration": 55.75,
     "expected": 0,
     "skipped": 0,
     "unexpected": 0,

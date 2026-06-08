@@ -17,6 +17,13 @@ partial class SettingsForm
     private NumericUpDown nudMaxTokens = null!;
     private Button btnTestAI = null!;
 
+    // Ollama 本地端
+    private TextBox txtOllamaUrl = null!, txtOllamaModel = null!;
+
+    // 任務 AI 指派
+    private ComboBox cmbTaskTestCaseProvider = null!, cmbTaskScriptProvider = null!, cmbTaskResultProvider = null!;
+    private TextBox txtTaskTestCaseModel = null!, txtTaskScriptModel = null!, txtTaskResultModel = null!;
+
     // Playwright
     private TextBox txtNodePath = null!;
     private CheckBox chkWriteBack = null!;
@@ -46,6 +53,7 @@ partial class SettingsForm
 
         tabs.TabPages.Add(BuildRedmineTab());
         tabs.TabPages.Add(BuildAITab());
+        tabs.TabPages.Add(BuildAITaskTab());
         tabs.TabPages.Add(BuildPlaywrightTab());
         tabs.TabPages.Add(BuildOutputTab());
 
@@ -90,24 +98,26 @@ partial class SettingsForm
     private TabPage BuildAITab()
     {
         var tab = new TabPage("AI");
-        var tbl = MakeTable(9);
+        var tbl = MakeTable(11);
 
         cmbProvider = new ComboBox { DropDownStyle = ComboBoxStyle.DropDownList, Dock = DockStyle.Fill };
-        cmbProvider.Items.AddRange(new[] { "Claude", "OpenAI", "Gemini" });
+        cmbProvider.Items.AddRange(new[] { "Claude", "OpenAI", "Gemini", "Ollama" });
         cmbProvider.SelectedIndex = 0;
 
-        AddRow(tbl, 0, "Provider：",           cmbProvider);
-        AddRow(tbl, 1, "Claude API Key：",      txtClaudeKey  = new TextBox { Dock = DockStyle.Fill, UseSystemPasswordChar = true });
-        AddRow(tbl, 2, "Claude Model：",        txtClaudeModel = new TextBox { Dock = DockStyle.Fill, Text = "claude-sonnet-4-5" });
-        AddRow(tbl, 3, "OpenAI API Key：",      txtOpenAIKey  = new TextBox { Dock = DockStyle.Fill, UseSystemPasswordChar = true });
-        AddRow(tbl, 4, "OpenAI Model：",        txtOpenAIModel = new TextBox { Dock = DockStyle.Fill, Text = "gpt-4o" });
-        AddRow(tbl, 5, "Gemini API Key：",      txtGeminiKey  = new TextBox { Dock = DockStyle.Fill, UseSystemPasswordChar = true });
-        AddRow(tbl, 6, "Gemini Model：",        txtGeminiModel = new TextBox { Dock = DockStyle.Fill, Text = "gemini-2.5-flash" });
-        AddRow(tbl, 7, "Max Tokens：",          nudMaxTokens  = new NumericUpDown { Minimum = 256, Maximum = 32768, Value = 4096, Increment = 256 });
+        AddRow(tbl, 0, "Provider：",             cmbProvider);
+        AddRow(tbl, 1, "Claude API Key：",        txtClaudeKey   = new TextBox { Dock = DockStyle.Fill, UseSystemPasswordChar = true });
+        AddRow(tbl, 2, "Claude Model：",          txtClaudeModel = new TextBox { Dock = DockStyle.Fill, Text = "claude-sonnet-4-5" });
+        AddRow(tbl, 3, "OpenAI API Key：",        txtOpenAIKey   = new TextBox { Dock = DockStyle.Fill, UseSystemPasswordChar = true });
+        AddRow(tbl, 4, "OpenAI Model：",          txtOpenAIModel = new TextBox { Dock = DockStyle.Fill, Text = "gpt-4o" });
+        AddRow(tbl, 5, "Gemini API Key：",        txtGeminiKey   = new TextBox { Dock = DockStyle.Fill, UseSystemPasswordChar = true });
+        AddRow(tbl, 6, "Gemini Model：",          txtGeminiModel = new TextBox { Dock = DockStyle.Fill, Text = "gemini-2.5-flash" });
+        AddRow(tbl, 7, "Max Tokens：",            nudMaxTokens   = new NumericUpDown { Minimum = 256, Maximum = 32768, Value = 4096, Increment = 256 });
+        AddRow(tbl, 8, "Ollama URL：",            txtOllamaUrl   = new TextBox { Dock = DockStyle.Fill, Text = "http://localhost:11434" });
+        AddRow(tbl, 9, "Ollama Model：",          txtOllamaModel = new TextBox { Dock = DockStyle.Fill, Text = "qwen2.5-coder:7b" });
 
         btnTestAI = new Button { Text = "測試 AI 連線", AutoSize = true };
         btnTestAI.Click += btnTestAI_Click;
-        tbl.Controls.Add(btnTestAI, 1, 8);
+        tbl.Controls.Add(btnTestAI, 1, 10);
 
         tab.Controls.Add(tbl);
         return tab;
@@ -121,6 +131,41 @@ partial class SettingsForm
         AddRow(tbl, 0, "Node.js 路徑：", txtNodePath  = new TextBox { Dock = DockStyle.Fill, Text = "node" });
         chkWriteBack = new CheckBox { Text = "測試完成後自動回寫結果至 Redmine Journal", AutoSize = true };
         tbl.Controls.Add(chkWriteBack, 1, 1);
+
+        tab.Controls.Add(tbl);
+        return tab;
+    }
+
+    private TabPage BuildAITaskTab()
+    {
+        var tab = new TabPage("任務 AI 指派");
+        var tbl = MakeTable(7);
+
+        // 說明列
+        var hint = new Label
+        {
+            Text      = "每個任務可獨立指定 AI，留空表示沿用上方全域設定。",
+            Dock      = DockStyle.Fill,
+            ForeColor = Color.FromArgb(180, 200, 255),
+            TextAlign = ContentAlignment.MiddleLeft
+        };
+        tbl.SetColumnSpan(hint, 2);
+        tbl.Controls.Add(hint, 0, 0);
+
+        static ComboBox MakeProviderCombo()
+        {
+            var c = new ComboBox { DropDownStyle = ComboBoxStyle.DropDownList, Dock = DockStyle.Fill };
+            c.Items.AddRange(new[] { "（沿用全域）", "Claude", "OpenAI", "Gemini", "Ollama" });
+            c.SelectedIndex = 0;
+            return c;
+        }
+
+        AddRow(tbl, 1, "① 生成測試案例 Provider：", cmbTaskTestCaseProvider = MakeProviderCombo());
+        AddRow(tbl, 2, "① 生成測試案例 Model：",    txtTaskTestCaseModel    = new TextBox { Dock = DockStyle.Fill, PlaceholderText = "留空沿用全域" });
+        AddRow(tbl, 3, "② 撰寫腳本 Provider：",     cmbTaskScriptProvider   = MakeProviderCombo());
+        AddRow(tbl, 4, "② 撰寫腳本 Model：",        txtTaskScriptModel      = new TextBox { Dock = DockStyle.Fill, PlaceholderText = "留空沿用全域" });
+        AddRow(tbl, 5, "③ 寫回結果 Provider：",     cmbTaskResultProvider   = MakeProviderCombo());
+        AddRow(tbl, 6, "③ 寫回結果 Model：",        txtTaskResultModel      = new TextBox { Dock = DockStyle.Fill, PlaceholderText = "留空沿用全域" });
 
         tab.Controls.Add(tbl);
         return tab;
